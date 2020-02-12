@@ -1,0 +1,10 @@
+body {
+    width: 1200px;
+    border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+}
+
+.item {
+    display: inline;
+    padding: 20px;
+}
