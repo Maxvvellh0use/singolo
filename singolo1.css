@@ -70,11 +70,92 @@ h2 {
 
 .phone-section {
     display: flex;
-    height: 470px;
+    flex-direction: column;
+    height: 475px;
     background: rgb(240,108,100);
 }
 
+.phone-section-top {
+    display: flex;
+}
+.phone-vertical {
+    margin-top: 44px;
+    margin-left: 38px;
+}
 
+.phone-horizontal {
+    margin-top: 139px;
+    margin-left: 78px;
+}
+
+.chev-left {
+    margin-top: 222px;
+    margin-left: 30px;
+}
+
+.chev-right {
+    margin-top: 222px;
+    margin-left: 55px;
+}
+
+.phone-section-bottom {
+    background: rgb(234, 103, 107);
+    height: 110px;
+}
+
+.phone-vertical img {
+    border-radius: 22px;
+    box-shadow:
+            0 0 rgb(206,93,86),
+            1px 1px rgb(206,93,86),
+            2px 2px rgb(206,93,86),
+            3px 3px rgb(206,93,86),
+            4px 4px rgb(206,93,86),
+            5px 5px rgb(206,93,86),
+            6px 6px rgb(206,93,86),
+            7px 7px rgb(206,93,86),
+            8px 8px rgb(206,93,86),
+            8px 9px rgb(206,93,86),
+            9px 9px rgb(206,93,86),
+            10px 10px rgb(206,93,86),
+            11px 11px rgb(206,93,86),
+            12px 12px rgb(206,93,86),
+            13px 13px rgb(206,93,86),
+            14px 14px rgb(206,93,86),
+            15px 15px rgb(206,93,86),
+            16px 16px rgb(206,93,86),
+            17px 17px rgb(206,93,86),
+            18px 18px rgb(206,93,86),
+            19px 19px rgb(206,93,86),
+            20px 20px rgb(206,93,86),
+            21px 21px rgb(206,93,86);
+}
+
+.phone-horizontal img {
+    border-radius: 22px;
+    box-shadow:
+            0 0 rgb(206,93,86),
+            1px 1px rgb(206,93,86),
+            2px 2px rgb(206,93,86),
+            3px 3px rgb(206,93,86),
+            4px 4px rgb(206,93,86),
+            5px 5px rgb(206,93,86),
+            6px 6px rgb(206,93,86),
+            7px 7px rgb(206,93,86),
+            8px 8px rgb(206,93,86),
+            8px 9px rgb(206,93,86),
+            9px 9px rgb(206,93,86),
+            10px 10px rgb(206,93,86),
+            11px 11px rgb(206,93,86),
+            12px 12px rgb(206,93,86),
+            13px 13px rgb(206,93,86),
+            14px 14px rgb(206,93,86),
+            15px 15px rgb(206,93,86),
+            16px 16px rgb(206,93,86),
+            17px 17px rgb(206,93,86),
+            18px 18px rgb(206,93,86),
+            19px 19px rgb(206,93,86);
+}
 
 
 
