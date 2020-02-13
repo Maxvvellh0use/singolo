@@ -1,5 +1,6 @@
 @import "node_modules/normalize.css/normalize.css";
 
+/*header styles*/
 body {
     width: 816px;
     font-family: 'Lato', sans-serif;
@@ -8,13 +9,14 @@ h2 {
     font-size: 19px;
 }
 
-li::before {
+.mark::before {
     content: '•';
     padding: 9px;
+    color: rgb(73,78,98);
 }
 
 .header {
-    height: 71px;
+    height: 67px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,25 +27,75 @@ li::before {
 .title {
     padding-left: 32px;
     align-self: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.star-color {
+    color: rgb(240,108,100);
 }
 
 .item {
     display: inline-block;
     list-style-type: none;
     font-size: 9px;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: rgb(240,108,100);
+}
+
+.home-menu:hover {
+    color: white;
+}
+
+.home-menu {
+    color: rgb(240,108,100);
 }
 
 .header-menu {
-    padding-top: 1px;
-    padding-right: 31px;
+    padding-top: 4px;
+    padding-right: 33px;
     align-self: center;
 }
 
-/*.menu {*/
-/*    */
-/*}*/
 
 .header-bottom {
-    height: 6px;
+    height: 8px;
     background: rgb(50, 55,70);
 }
+
+/*section-phone styles*/
+
+.phone-section {
+    display: flex;
+    height: 470px;
+    background: rgb(240,108,100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.phone-section-bottom {
+    background: rgb(234,103,107);
+    height: 6px;
+}
+
+/*section-services styles*/
+
