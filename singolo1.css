@@ -91,11 +91,13 @@ h2 {
 .chev-left {
     margin-top: 222px;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .chev-right {
-    margin-top: 222px;
-    margin-left: 55px;
+    margin-top: 220px;
+    margin-left: 59px;
+    cursor: pointer;
 }
 
 .phone-section-bottom {
@@ -157,21 +159,10 @@ h2 {
             19px 19px rgb(206,93,86);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.chev-left img:hover, .chev-right img:hover {
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
+    filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
+}
 
 .phone-section-bottom {
     background: rgb(234,103,107);
