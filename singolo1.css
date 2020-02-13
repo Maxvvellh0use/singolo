@@ -1,10 +1,49 @@
+@import "node_modules/normalize.css/normalize.css";
+
 body {
-    width: 1200px;
-    border: 1px solid black;
+    width: 816px;
     font-family: 'Lato', sans-serif;
+}
+h2 {
+    font-size: 19px;
+}
+
+li::before {
+    content: '•';
+    padding: 9px;
+}
+
+.header {
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(45, 48,58);
+    color: white;
+}
+
+.title {
+    padding-left: 32px;
+    align-self: center;
 }
 
 .item {
-    display: inline;
-    padding: 20px;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 9px;
+}
+
+.header-menu {
+    padding-top: 1px;
+    padding-right: 31px;
+    align-self: center;
+}
+
+/*.menu {*/
+/*    */
+/*}*/
+
+.header-bottom {
+    height: 6px;
+    background: rgb(50, 55,70);
 }
