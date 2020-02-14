@@ -15,7 +15,7 @@ h2 {
     color: rgb(73,78,98);
 }
 
-.header {
+.wrapper {
     height: 67px;
     display: flex;
     flex-direction: row;
@@ -25,6 +25,7 @@ h2 {
 }
 
 .title {
+    letter-spacing: normal;
     padding-left: 32px;
     align-self: center;
     font-size: 10px;
@@ -171,3 +172,82 @@ h2 {
 
 /*section-services styles*/
 
+.services {
+    color: rgb(102,109,137);
+    background: rgb(242,242,242);
+    height: 400px;
+}
+
+.services-header {
+    flex-direction: row;
+    margin-top: 26px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.services-title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.services-title-text {
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: .000001mm;
+    word-spacing: .18mm;
+    line-height: 22px;
+}
+
+.services-block {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+}
+
+.services-all-3-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 21px;
+    margin-top: 3px;
+}
+
+.services-interior {
+    display: flex;
+    width: 240px;
+    margin-left: 14px;
+    margin-top: -10px;
+}
+
+.services-text-block {
+    margin-top: 6px;
+}
+
+.services-text-block p {
+    text-align: justify;
+    letter-spacing: .02mm;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.services-text-block h4 {
+    font-size: 15px;
+}
+
+.services-all-text {
+    margin-top: -13px;
+    word-wrap: break-word;
+    font-size: 9px;
+    word-spacing: .18mm;
+    line-height: 18px;
+}
+
+.icons {
+    margin-right: 17px;
+    align-self: center;
+}
+
+.icons img {
+    width: 46px;
+}
