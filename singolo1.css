@@ -34,7 +34,7 @@ h1 {
 
 
 .title {
-    letter-spacing: normal;
+    letter-spacing: 0.00006mm;
     padding-left: 40px;
     align-self: center;
     font-size: 12px;
@@ -97,7 +97,7 @@ h1 {
 
 .phone-horizontal {
     margin-top: 175px;
-    margin-left: 99px;
+    margin-left: 97px;
 }
 
 .chev-left {
@@ -203,6 +203,7 @@ h1 {
 
 .services-header {
     flex-direction: row;
+    width: 1020px;
     margin-top: 36px;
     margin-left: 39px;
     margin-right: 37px;
@@ -211,14 +212,16 @@ h1 {
 .services-title {
     font-size: 30px;
     font-weight: bolder;
-    letter-spacing: .1mm;
+    letter-spacing: .0002mm;
 }
 
 .services-title-text {
+    width: 960px;
+    margin-top: -5px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: .000001mm;
-    word-spacing: .10mm;
+    word-spacing: .0001mm;
     line-height: 29px;
 }
 
@@ -239,15 +242,20 @@ h1 {
 .services-interior {
     display: flex;
     width: 300px;
-    margin-left: 17px;
-    margin-top: -15px;
+    margin-top: -8px;
+    padding-left: 20px;
 }
 
 .services-text-block {
-    margin-top: 8px;
+    text-align: justify;
+    padding-left: 20px;
+    margin-top: 5px;
+    letter-spacing: 0.005mm;
+    word-spacing: 0.005mm ;
 }
 
 .services-text-block p {
+    margin-top: -15px;
     text-align: justify;
     letter-spacing: .02mm;
     word-wrap: break-word;
@@ -260,7 +268,6 @@ h1 {
 }
 
 .services-all-text {
-    margin-top: -16px;
     word-wrap: break-word;
     font-size: 11px;
     word-spacing: .18mm;
@@ -268,9 +275,10 @@ h1 {
 }
 
 .icons {
-    margin-top: 8px;
-    margin-right: 25px;
     align-self: center;
+    margin-top: 0;
+    margin-left: -6px;
+    margin-bottom: 11px;
 }
 
 .icons img {
