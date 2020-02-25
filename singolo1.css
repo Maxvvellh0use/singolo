@@ -280,17 +280,19 @@ h1 {
 }
 
 .services-all-text {
+    text-align: justify;
     word-wrap: break-word;
     font-size: 11px;
-    word-spacing: .18mm;
+    word-spacing: .0004mm;
     line-height: 23px;
 }
+
 
 .icons {
     align-self: center;
     margin-top: 1px;
     margin-left: -5px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 .icons img {
