@@ -1,10 +1,16 @@
-/*header portfolio styles*/
+
+@import "node_modules/normalize.css/normalize.css";
 
 body {
     font-family: 'Lato', sans-serif;
 }
+
+/*header portfolio styles*/
+
 h1 {
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
 }
 
 .wrapper {
@@ -15,11 +21,150 @@ h1 {
 }
 
 
+.header__wrapper,.content__wrapper {
+    background: rgb(45,48,58);
+    color: rgb(102,109,138);
+}
+
+.content__wrapper {
+    height: 685px;
+}
+
+
+.header {
+    padding-top: 60px;
+}
+
+.header__text {
+    padding-top: 4px;
+    font-size: 17px;
+    word-spacing: .38mm;
+}
+
 .filter {
     display: flex;
     flex-direction: row;
 }
 
-.filter-item {
-    padding: 0 4px;
+.filter__item {
+    color: rgb(102,109,138);
+    padding: 2px 6px 3px 6px;
+    font-size: 12px;
+    background: rgb(45,48,58);
+    border-color: rgb(102,109,138);
+    border-radius: 5px;
 }
+
+.items {
+    margin-left: 9px;
+}
+
+.filter__item:hover {
+    transition: all ease-out .3s;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+/*content style*/
+
+.layout-4-column {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    justify-content: flex-end;
+    width: 960px;
+}
+
+.content__image {
+    padding: 2px 14px 15px 0;
+    flex-grow: 1;
+}
+
+.content__bottom {
+    height: 6px;
+    background: rgb(50,55,70);
+    width: 1020px;
+    margin: auto;
+}
+
+/*person list style*/
+
+
+.about__section {
+    background: rgb(242,242,242);
+    width: 1020px;
+    height: 728px;
+    margin: auto;
+}
+
+.section__header{
+   padding-top: 38px;
+}
+
+.section__name {
+    font-size: 30px;
+}
+
+.section__description {
+    word-spacing: .23mm;
+    letter-spacing: .06mm;
+    margin-top: -7px ;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+.peoples-3-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 27px;
+}
+
+.about__person-list {
+    padding: 0px -3px -8px 0;
+}
+
+.person-list__photo {
+    width: 300px;
+}
+
+.person-list__description {
+    width: 300px;
+}
+
+.person-list__description {
+    margin-top: -17px;
+}
+
+#person-list__center-block {
+    width: 302px;
+}
+
+.person-list__title {
+    font-size: 18px;
+    letter-spacing: .02mm;
+    word-spacing: .02mm;
+}
+
+.person-list__text {
+    margin-top: -23px;
+    letter-spacing: .06mm;
+    font-size: 11px;
+    line-height: 21px;
+    word-spacing: .2mm;
+}
+
+
+
+
+
+
