@@ -114,14 +114,6 @@ h1 {
     line-height: 30px;
 }
 
-
-
-
-
-
-
-
-
 .peoples-3-columns {
     display: flex;
     flex-direction: row;
@@ -150,6 +142,7 @@ h1 {
 }
 
 .person-list__title {
+    padding-top: .09mm;
     font-size: 18px;
     letter-spacing: .02mm;
     word-spacing: .02mm;
@@ -161,7 +154,32 @@ h1 {
     font-size: 11px;
     line-height: 21px;
     word-spacing: .2mm;
+    text-align: justify;
 }
+
+.person-list__social-links {
+    padding-left: 1px;
+    padding-top: 9px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.social-links {
+    padding: 0 8px 0 0;
+}
+
+.right-links {
+    padding: 1.054mm 2.13mm 0 0;
+}
+
+.social-links:hover {
+    cursor: pointer;
+    transition: all ease-out .5s;
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
+    filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
+}
+
 
 
 
