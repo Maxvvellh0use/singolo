@@ -96,6 +96,7 @@ h1 {
     width: 1020px;
     height: 728px;
     margin: auto;
+    color: rgb(102,109,137);
 }
 
 .section__header{
@@ -178,6 +179,13 @@ h1 {
     transition: all ease-out .5s;
     -webkit-filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
     filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
+}
+
+.about__bottom {
+    height: 6px;
+    background: white;
+    width: 1020px;
+    margin: auto;
 }
 
 
