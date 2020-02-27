@@ -64,7 +64,7 @@ button {
     border-radius: 4px;
 }
 
-.items {
+.filter__item--items {
     margin-left: 3.2mm;
 }
 
@@ -77,7 +77,7 @@ button {
 
 /*content style*/
 
-.layout-4-column {
+.content-block {
     display: flex;
     flex-wrap: wrap;
     padding-top: 15px;
@@ -85,12 +85,12 @@ button {
     width: 960px;
 }
 
-.content__image {
+.content-block__image {
     padding: 2px 14px 15px 0;
     flex-grow: 1;
 }
 
-.content__bottom {
+.bottom {
     height: 6px;
     background: rgb(50,55,70);
     width: 1020px;
@@ -108,15 +108,15 @@ button {
     color: rgb(102,109,137);
 }
 
-.section__header{
+.section-header {
    padding-top: 38px;
 }
 
-.section__name {
+.section-header__name {
     font-size: 30px;
 }
 
-.section__description {
+.section-header__description {
     word-spacing: .23mm;
     letter-spacing: .06mm;
     margin-top: -7px ;
@@ -124,26 +124,26 @@ button {
     line-height: 30px;
 }
 
-.peoples-3-columns {
+.peoples {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 27px;
 }
 
-.about__person-list {
+.peoples__person-list {
     padding: 0px -3px -8px 0;
 }
 
-.person-list__photo {
+.peoples__photo {
     width: 300px;
 }
 
-.person-list__description {
+.peoples__description {
     width: 300px;
 }
 
-.person-list__description {
+.peoples__description {
     margin-top: -17px;
 }
 
@@ -151,14 +151,14 @@ button {
     width: 302px;
 }
 
-.person-list__title {
+.peoples__title {
     padding-top: .09mm;
     font-size: 18px;
     letter-spacing: .02mm;
     word-spacing: .02mm;
 }
 
-.person-list__text {
+.peoples__text {
     margin-top: -23px;
     letter-spacing: .06mm;
     font-size: 11px;
@@ -167,7 +167,7 @@ button {
     text-align: justify;
 }
 
-.person-list__social-links {
+.peoples__social-links {
     padding-left: 1px;
     padding-top: 9px;
     display: flex;
@@ -175,7 +175,7 @@ button {
     list-style-type: none;
 }
 
-.social-links {
+.peoples__social-links-item {
     padding: 1px 8px 0 0;
 }
 
@@ -183,14 +183,14 @@ button {
     padding: 5px 2.13mm 0 0;
 }
 
-.social-links:hover {
+.peoples__social-links-item:hover {
     cursor: pointer;
     transition: all ease-out .5s;
     -webkit-filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
     filter: drop-shadow(0 0 2px rgba(100,0,0,0.5));
 }
 
-.about__bottom {
+.bottom-line {
     height: 6px;
     background: white;
     width: 1020px;
