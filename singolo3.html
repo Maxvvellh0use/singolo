@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Singolo3</title>
+    <link rel="stylesheet" href="singolo3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="quote-section">
         <div class="wrapper quote__wrapper">
             <div class="quote">
                 <div class="quote__title">
-                    <h2></h2>
+                    <h2 class="quote__name">Get a Quote</h2>
+                    <p class="quote__description">Fusce dapibus, tellus ac cursus commodo,
+                        tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                        erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
+                        tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+                <div class="quote__main-content">
+                    <form class="form" action="#" method="POST">
+                        <input class="input" type="text" name="name" placeholder="Name (Required)" required>
+                        <input class="input" type="email" name="email" placeholder="Email (Required)" required>
+                        <input class="input" type="text" name="subject" placeholder="Subject">
+                        <textarea class="input input--textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                        <button class="form__submit">Send</button>
+                    </form>
+                    <div class="contacts">
+                        <h3 class="contacts__name">Contact Information</h3>
+                        <p class="contacts__description">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                            viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
+                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                        </p>
+                        <ul class="contacts__list">
+                            <li class="contacts__item  contacts__list--location"><img class="contacts__image location__image" src="assets/getAQoute/location.png" alt="location"><span class="contacts__location">Elm St. 14/05 Lost City</span></li>
+                            <li class="contacts__item  contacts__list--telephone"><img class="contacts__image phone__image" src="assets/getAQoute/phone.png" alt="location"><a class="contacts__links" href="tel:035283318635">03528 331 86 35</a></li>
+                            <li class="contacts__item  contacts__list--mail"><img class="contacts__image mail__image" src="assets/getAQoute/mail.png" alt="location"><a class="contacts__links" href="mailto:info@singolo.com">info@singolo.com</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="wrapper footer__wrapper">
+            <div class="copyright">
+                <span class="copyright__text">&copy; Copyright 2013</span>
+            </div>
+            <div class="social-links">
+                <ul class="social-links__social-links">
+                    <li class="social-links__item"><a href="#"><img src="assets/portfolio/social/facebook.png" alt="facebook"></a></li>
+                    <li class="social-links__item"><a href="#"><img src="assets/portfolio/social/g+.png" alt="google+"></a></li>
+                    <li class="social-links__item"><a href="#"><img src="assets/portfolio/social/twitter.png" alt="twitter"></a></li>
+                    <li class="social-links__item"><a href="#"><img src="assets/portfolio/social/inst.png" alt="instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
