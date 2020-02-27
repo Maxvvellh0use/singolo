@@ -13,6 +13,15 @@ h1 {
     margin: 0;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .wrapper {
     max-width: 1020px;
     padding: 0 40px;
@@ -47,16 +56,16 @@ h1 {
 }
 
 .filter__item {
+    border: 1px solid rgb(102,109,138);
     color: rgb(102,109,138);
-    padding: 2px 6px 3px 6px;
+    padding: 4px 5px 4px 6px;
     font-size: 12px;
     background: rgb(45,48,58);
-    border-color: rgb(102,109,138);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .items {
-    margin-left: 9px;
+    margin-left: 3.2mm;
 }
 
 .filter__item:hover {
@@ -71,7 +80,7 @@ h1 {
 .layout-4-column {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 16px;
+    padding-top: 15px;
     justify-content: flex-end;
     width: 960px;
 }
@@ -167,11 +176,11 @@ h1 {
 }
 
 .social-links {
-    padding: 0 8px 0 0;
+    padding: 1px 8px 0 0;
 }
 
 .right-links {
-    padding: 1.054mm 2.13mm 0 0;
+    padding: 5px 2.13mm 0 0;
 }
 
 .social-links:hover {
