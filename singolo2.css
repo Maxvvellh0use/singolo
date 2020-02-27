@@ -7,7 +7,7 @@ body {
 
 /*header portfolio styles*/
 
-h1 {
+.portfolio-header__title {
     font-size: 30px;
     font-weight: bolder;
     margin: 0;
@@ -40,7 +40,7 @@ button {
 }
 
 
-.header {
+.portfolio-header {
     padding-top: 60px;
 }
 
@@ -65,7 +65,7 @@ button {
 }
 
 .filter__item--items {
-    margin-left: 3.2mm;
+    margin-left: 3mm;
 }
 
 .filter__item:hover {
@@ -132,10 +132,11 @@ button {
 }
 
 .peoples__person-list {
-    padding: 0px -3px -8px 0;
+    padding: 0 -3px -8px 0;
 }
 
 .peoples__photo {
+    margin-top: -1px;
     width: 300px;
 }
 
