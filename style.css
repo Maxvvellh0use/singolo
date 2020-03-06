@@ -204,6 +204,7 @@ h1 {
 }
 
 .services-title-text {
+    text-align: justify;
     width: 960px;
     margin-top: -5px;
     margin-left: 1px;
@@ -325,6 +326,7 @@ button {
 .content__wrapper {
     height: 692px;
     border-bottom: 6px solid rgb(50,55,70);
+    overflow: hidden;
 }
 
 
@@ -367,6 +369,7 @@ button {
 /*content style*/
 
 .content-block {
+    height: 620px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 17px;
@@ -428,11 +431,9 @@ button {
 
 .peoples__description {
     width: 300px;
-}
-
-.peoples__description {
     margin-top: -17px;
 }
+
 
 #person-list__center-block {
     width: 302px;
@@ -443,6 +444,8 @@ button {
     font-size: 18px;
     letter-spacing: .02mm;
     word-spacing: .02mm;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .peoples__text {
@@ -566,7 +569,9 @@ button {
 .form__submit:hover {
     cursor: pointer;
     background-color: rgb(150,86,79);
+    transition: background-color .7s ease-out;
     box-shadow: 0 0 7px -1px rgba(0,0,0,.5);
+
 }
 
 .contacts {
