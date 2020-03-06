@@ -241,11 +241,14 @@ h1 {
 }
 
 .services-text-block {
+    height: 134px;
     text-align: justify;
     padding-left: 21px;
     margin-top: 4px;
     letter-spacing: 0.005mm;
     word-spacing: 0.005mm ;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .services-text-block p {
