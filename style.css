@@ -88,6 +88,7 @@ a {
 /*section-phone styles*/
 
 .phone-section {
+    transition: background-color .6s ease;
     width: 1020px;
     display: flex;
     flex-direction: column;
@@ -97,8 +98,37 @@ a {
 }
 
 .phone-section-top {
+    right: 1010px;
+    width: 3000px;
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    transition: all .5s
 }
+
+/*carousel styles*/
+
+.carousel {
+    position: relative;
+}
+
+.phone-section-slide2_left {
+    top: 8%;
+    position: relative;
+}
+
+.phone-section-slide2_right {
+    top: 8%;
+    position: relative;
+}
+
+.phone-section-slide1 {
+    display: flex;
+    position: relative;
+}
+
+/**/
+
 .phone-vertical {
     margin-top: 54px;
     margin-left: 49px;
@@ -110,15 +140,19 @@ a {
 }
 
 .chev-left {
+    position: absolute;
     margin-top: 277px;
     margin-left: 37px;
     cursor: pointer;
+    z-index: 9;
 }
 
 .chev-right {
+    position: absolute;
     margin-top: 275px;
-    margin-left: 75px;
+    margin-left: 960px;
     cursor: pointer;
+    z-index: 9;
 }
 
 
