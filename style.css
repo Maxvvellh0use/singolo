@@ -70,9 +70,8 @@ a {
 }
 
 .menu_active {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    font-size: 16px;
+    color: rgb(240,108,100);
 }
 
 .home-menu {
