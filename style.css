@@ -98,6 +98,7 @@ a {
 }
 
 .phone-section-top {
+    overflow: hidden;
     right: 1010px;
     width: 3000px;
     position: relative;
@@ -113,17 +114,23 @@ a {
 }
 
 .phone-section-slide2_left {
+    transition: opacity .6s ease;
     top: 8%;
     position: relative;
+    opacity: 0;
 }
 
 .phone-section-slide2_right {
+    transition: opacity .6s ease;
     top: 8%;
     position: relative;
+    opacity: 0;
 }
 
 .phone-section-slide1 {
+    transition: opacity .6s ease;
     display: flex;
+    height: 1000px;
     position: relative;
 }
 

@@ -3,6 +3,9 @@ const CAROUSEL_LEFT = document.getElementById('chev_left');
 const CAROUSEL_RIGHT = document.getElementById('chev_right');
 const CAROUSEL = document.getElementById('carousel');
 const BACKGROUND_CAROUSEL = document.getElementById('phone-section-color');
+const HIDDEN_SLIDE_LEFT = document.getElementById('left_slide');
+const HIDDEN_SLIDE_RIGHT = document.getElementById('right_slide');
+const HIDDEN_SLIDE_CENTER = document.getElementById('center_slide');
 
 MENU.addEventListener('click', (event) => {
     let itemsMenu = MENU.querySelectorAll('a');
@@ -18,12 +21,16 @@ CAROUSEL_LEFT.addEventListener('click', function carouselTranslate() {
         transformValue = 0;
         CAROUSEL.style.transform =`translateX(${transformValue}px)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#F06C64`;
+        HIDDEN_SLIDE_LEFT.style.opacity = '0';
+        HIDDEN_SLIDE_CENTER.style.opacity = '1';
         clicks = 0;
     }
     else {
         transformValue += 1241;
         CAROUSEL.style.transform =`translateX(${transformValue}px)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
+        HIDDEN_SLIDE_LEFT.style.opacity = '1';
+        HIDDEN_SLIDE_CENTER.style.opacity = '0';
         clicks++;
     }
 });
@@ -33,12 +40,16 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
         transformValue = 0;
         CAROUSEL.style.transform =`translateX(${transformValue}px)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#F06C64`;
+        HIDDEN_SLIDE_RIGHT.style.opacity = '0';
+        HIDDEN_SLIDE_CENTER.style.opacity = '1';
         clicks = 0;
     }
     else {
         transformValue -= 1241;
         CAROUSEL.style.transform =`translateX(${transformValue}px)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
+        HIDDEN_SLIDE_RIGHT.style.opacity = '1';
+        HIDDEN_SLIDE_CENTER.style.opacity = '0';
         clicks++;
     }
 });
