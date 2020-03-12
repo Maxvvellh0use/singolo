@@ -25,6 +25,8 @@ a {
 .wrapper-header,.wrapper-phone,.wrapper-services {
     max-width: 1020px;
     margin: 0 auto;
+    overflow: hidden;
+    transition: opacity .6s ease;
 }
 
 .header {
@@ -135,6 +137,31 @@ a {
     position: relative;
 }
 
+.off_screen_vertical {
+    margin-top: 64px;
+    margin-left: 12px;
+    position: absolute;
+    z-index: 10;
+    height: 334px;
+    width: 192px;
+    background: black;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.off_screen_horizontal {
+    margin-top: 12px;
+    margin-left: 60px;
+    position: absolute;
+    z-index: 10;
+    height: 192px;
+    width: 334px;
+    background: black;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+
 /**/
 
 .phone-vertical {
@@ -165,6 +192,7 @@ a {
 
 
 .phone-vertical img {
+    cursor: pointer;
     border-radius: 27px;
     box-shadow:
             0 0 rgb(206,93,86),
@@ -197,6 +225,7 @@ a {
 }
 
 .phone-horizontal img {
+    cursor: pointer;
     border-radius: 27px;
     box-shadow:
             0 0 rgb(206,93,86),
