@@ -372,12 +372,6 @@ a {
 
 
 
-
-
-
-
-
-
 /*header portfolio styles*/
 
 .portfolio-header__title {
@@ -446,6 +440,12 @@ button {
 
 .filter__item:hover {
     transition: all ease-out .3s;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+.active_button {
     border-color: white;
     color: white;
     cursor: pointer;

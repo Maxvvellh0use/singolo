@@ -10,6 +10,7 @@ const PHONE_VERTICAL = document.getElementById('phone_vert');
 const PHONE_HORIZONTAL = document.getElementById('phone_hor');
 const OFF_PHONE_VERTICAL = document.getElementById('off_vertical');
 const OFF_PHONE_HORIZONTAL = document.getElementById('off_horizontal');
+const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
 
 //menu-navigation:
 
@@ -68,7 +69,6 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
     }
 });
 
-console.log(transformValue);
 
 
 //turn off screen phones
@@ -101,6 +101,21 @@ PHONE_HORIZONTAL.addEventListener('click', (event) => {
 });
 
 
+//Portfolio switch buttons:
+
+PORTFOLIO_FILTER.addEventListener('click', (event) => {
+    let itemsFilter = PORTFOLIO_FILTER.querySelectorAll('button');
+    let target = event.target;
+    itemsFilter.forEach(function(elem) {
+        elem.classList.remove('active_button')
+    });
+    itemsFilter.forEach(function(elem) {
+        if (elem === target) {
+            elem.classList.add('active_button');
+        }
+    });
+    console.log(itemsFilter);
+});
 
 
 
