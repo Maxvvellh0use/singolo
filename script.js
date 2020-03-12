@@ -7,12 +7,16 @@ const HIDDEN_SLIDE_LEFT = document.getElementById('left_slide');
 const HIDDEN_SLIDE_RIGHT = document.getElementById('right_slide');
 const HIDDEN_SLIDE_CENTER = document.getElementById('center_slide');
 
+//menu-navigation:
+
 MENU.addEventListener('click', (event) => {
     let itemsMenu = MENU.querySelectorAll('a');
     let targ = event.target;
     itemsMenu.forEach(elem => elem.classList.remove('menu_active'));
     targ.classList.add('menu_active');
 });
+
+//carousel:
 
 let clicks = 0;
 let transformValue = 0;
