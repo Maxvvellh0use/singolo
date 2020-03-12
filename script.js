@@ -15,9 +15,15 @@ const OFF_PHONE_HORIZONTAL = document.getElementById('off_horizontal');
 
 MENU.addEventListener('click', (event) => {
     let itemsMenu = MENU.querySelectorAll('a');
-    let targ = event.target;
-    itemsMenu.forEach(elem => elem.classList.remove('menu_active'));
-    targ.classList.add('menu_active');
+    let target = event.target;
+    itemsMenu.forEach(function(elem) {
+        elem.classList.remove('menu_active')
+    });
+    itemsMenu.forEach(function(elem) {
+        if (elem === target) {
+            elem.classList.add('menu_active');
+        }
+    });
 });
 
 //carousel:
