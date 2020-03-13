@@ -11,6 +11,7 @@ const PHONE_HORIZONTAL = document.getElementById('phone_hor');
 const OFF_PHONE_VERTICAL = document.getElementById('off_vertical');
 const OFF_PHONE_HORIZONTAL = document.getElementById('off_horizontal');
 const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
+const IMAGES_BLOCK =  document.getElementById('images_block');
 
 //menu-navigation:
 
@@ -75,8 +76,7 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
 
 let clickPhonesVert = 0;
 
-PHONE_VERTICAL.addEventListener('click', (event) => {
-    let target = event.target;
+PHONE_VERTICAL.addEventListener('click', () => {
     if (clickPhonesVert === 0) {
         OFF_PHONE_VERTICAL.style.opacity = '1';
         clickPhonesVert++;
@@ -103,18 +103,44 @@ PHONE_HORIZONTAL.addEventListener('click', (event) => {
 
 //Portfolio switch buttons:
 
-PORTFOLIO_FILTER.addEventListener('click', (event) => {
-    let itemsFilter = PORTFOLIO_FILTER.querySelectorAll('button');
-    let target = event.target;
-    itemsFilter.forEach(function(elem) {
-        elem.classList.remove('active_button')
+window.onload = function () {
+    PORTFOLIO_FILTER.addEventListener('click', (event) => {
+        let itemsFilter = PORTFOLIO_FILTER.querySelectorAll('button');
+
+        let target = event.target;
+        itemsFilter.forEach((elem) => {
+            elem.classList.remove('active_button')
+        });
+        itemsFilter.forEach(function(elem) {
+            const images = IMAGES_BLOCK.querySelectorAll('.content-block__image');
+            if (elem === target) {
+                elem.classList.add('active_button');
+                mixPictures(images)
+            }
+
+        });
     });
-    itemsFilter.forEach(function(elem) {
+
+    const mixPictures = (images) => {
+        images.forEach((elem) => {
+            IMAGES_BLOCK.insertAdjacentElement('afterbegin', elem)
+        })
+    };
+};
+
+//Border images after click:
+
+IMAGES_BLOCK.addEventListener('click', (event) => {
+    let target = event.target;
+    let images = IMAGES_BLOCK.querySelectorAll('img');
+    images.forEach(elem => {
+        elem.style.outline = 'none';
+    });
+    images.forEach(function(elem) {
         if (elem === target) {
-            elem.classList.add('active_button');
+            elem.style.outline = '5px solid #F06C64';
         }
     });
-    console.log(itemsFilter);
 });
 
 
