@@ -11,7 +11,9 @@ const PHONE_HORIZONTAL = document.getElementById('phone_hor');
 const OFF_PHONE_VERTICAL = document.getElementById('off_vertical');
 const OFF_PHONE_HORIZONTAL = document.getElementById('off_horizontal');
 const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
-const IMAGES_BLOCK =  document.getElementById('images_block');
+const IMAGES_BLOCK = document.getElementById('images_block');
+const BUTTON_POPUP = document.getElementById('button_submit');
+const BUTTON_CLOSE_POPUP = document.getElementById('button_submit_close');
 
 //menu-navigation:
 
@@ -143,6 +145,63 @@ IMAGES_BLOCK.addEventListener('click', (event) => {
     });
 });
 
+//Get a quote form submit:
+
+const formSubmit = () => {
+    let subject = document.getElementById('subject').value.toString();
+    let describe = document.getElementById('describe').value.toString();
+    console.log(describe);
+    let messageSubject = document.getElementById('message_subject');
+    let messageDescribe = document.getElementById('message_describe');
+    if (subject === 'Singolo' && describe === '') {
+        openPopup();
+        messageSubject.innerHTML = 'Тема: Singolo';
+        messageDescribe.innerHTML = 'Без описания';
+    }
+    else if (subject === '' && describe === '') {
+        openPopup();
+        messageSubject.innerHTML = 'Без темы';
+        messageDescribe.innerHTML = 'Без описания';
+    }
+    else if (describe === 'Portfolio project' && subject === '') {
+        openPopup();
+        messageSubject.innerHTML = 'Без темы';
+        messageDescribe.innerHTML = 'Описание: Portfolio project';
+    }
+    else if (describe === 'Portfolio project' && subject === 'Singolo') {
+        openPopup();
+        messageSubject.innerHTML = 'Тема: Singolo';
+        messageDescribe.innerHTML = 'Описание: Portfolio project';
+    }
+};
+
+
+const openPopup = () => {
+    let blackout = document.getElementById('popup_blackout');
+    let popup = document.getElementById('popup');
+    blackout.style.display = 'block';
+    popup.style.display = 'block';
+};
+
+const closePopup = () => {
+    let popup = document.getElementById('popup');
+    let blackout = document.getElementById('popup_blackout');
+    clearInputs();
+    blackout.style.display = 'none';
+    popup.style.display = 'none';
+};
+
+const clearInputs = () => {
+    let form = document.getElementById('form');
+    let inputs = form.querySelectorAll('input');
+    let textAreas = form.querySelectorAll('textarea');
+    inputs.forEach(elem => elem.value = '');
+    textAreas.forEach(elem => elem.value = '');
+};
+
+BUTTON_POPUP.addEventListener('click', formSubmit);
+
+BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
 
 
 

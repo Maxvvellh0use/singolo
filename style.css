@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    width: 1020px;
     margin: auto;
 }
 h1 {
@@ -663,6 +662,37 @@ button {
     box-shadow: 0 0 7px -1px rgba(0,0,0,.5);
 
 }
+
+.popup {
+    position: absolute;
+    display: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 150px;
+    z-index: 25;
+    margin-top: 100px;
+    margin-left: 370px;
+    background: #666D89;
+}
+
+.popup_blackout {
+    position: fixed;
+    display: none;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+    background: #2D303A;
+    opacity: .4;
+}
+
+.popup_button {
+    background: rgb(214,86,79);
+    padding: 4px 5px 4px 6px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+
 
 .contacts {
     flex-basis: 1222px;

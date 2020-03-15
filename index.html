@@ -8,6 +8,8 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+<div class="popup_blackout" id="popup_blackout">
+</div>
     <header>
         <a name="home"></a>
         <div class="wrapper-header">
@@ -272,13 +274,19 @@
                     tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="quote__main-content">
-                <form class="form" action="#" method="POST">
+                <form class="form" action="#" method="POST" onsubmit="formSubmit()" id="form">
                     <input class="input" type="text" name="name" placeholder="Name (Required)" required>
                     <input class="input" type="email" name="email" placeholder="Email (Required)" required>
-                    <input class="input" type="text" name="subject" placeholder="Subject">
-                    <textarea class="input input--textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                    <button class="form__submit" type="submit">Send</button>
+                    <input class="input" type="text" name="subject" placeholder="Subject" id="subject">
+                    <textarea class="input input--textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..." id="describe"></textarea>
+                    <button class="form__submit" type="button" id="button_submit">Send</button>
                 </form>
+                <div class="popup" id="popup">
+                    <p>Писмо отправлено</p>
+                    <p class="message" id="message_subject"></p>
+                    <p class="message" id="message_describe"></p>
+                    <button class="popup_button" id="button_submit_close">OK</button>
+                </div>
                 <div class="contacts">
                     <a name="contact"></a>
                     <h3 class="contacts__name">Contact Information</h3>
@@ -296,8 +304,6 @@
         </div>
     </div>
 </section>
-<div class="bottom-quote-section-line">
-</div>
 <footer>
     <div class="wrapper footer__wrapper">
         <div class="copyright">
