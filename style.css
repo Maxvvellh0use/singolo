@@ -29,6 +29,8 @@ a {
 }
 
 .header {
+    position: fixed;
+    z-index: 34;
     width: 1020px;
     height: 89px;
     display: flex;
@@ -93,7 +95,7 @@ a {
     width: 1020px;
     display: flex;
     flex-direction: column;
-    height: 594px;
+    height: 683px;
     background: rgb(240,108,100);
     border-bottom: 6px solid rgb(234,103,107);
 }
@@ -116,14 +118,14 @@ a {
 
 .phone-section-slide2_left {
     transition: opacity .6s ease;
-    top: 8%;
+    top: 19%;
     position: relative;
     opacity: 0;
 }
 
 .phone-section-slide2_right {
     transition: opacity .6s ease;
-    top: 8%;
+    top: 19%;
     position: relative;
     opacity: 0;
 }
@@ -164,18 +166,18 @@ a {
 /**/
 
 .phone-vertical {
-    margin-top: 54px;
+    margin-top: 143px;
     margin-left: 49px;
 }
 
 .phone-horizontal {
-    margin-top: 175px;
+    margin-top: 264px;
     margin-left: 98px;
 }
 
 .chev-left {
     position: absolute;
-    margin-top: 277px;
+    margin-top: 366px;
     margin-left: 37px;
     cursor: pointer;
     z-index: 9;
@@ -183,7 +185,7 @@ a {
 
 .chev-right {
     position: absolute;
-    margin-top: 275px;
+    margin-top: 366px;
     margin-left: 960px;
     cursor: pointer;
     z-index: 9;
