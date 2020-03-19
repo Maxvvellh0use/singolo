@@ -14,6 +14,7 @@ const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
 const IMAGES_BLOCK = document.getElementById('images_block');
 const BUTTON_POPUP = document.getElementById('button_submit');
 const BUTTON_CLOSE_POPUP = document.getElementById('button_submit_close');
+const FORM = document.getElementById('form');
 
 //menu-navigation:
 
@@ -34,7 +35,6 @@ const BUTTON_CLOSE_POPUP = document.getElementById('button_submit_close');
 
 const onScroll = () => {
     const cursorPos = window.scrollY;
-
     document.querySelectorAll('#home, #services, #portfolio, #about, #contact').forEach(elem => {
         let idElem = elem.getAttribute('id');
         let itemsMenu = MENU.querySelectorAll('a');
@@ -55,7 +55,7 @@ document.addEventListener('scroll', onScroll);
 
 
 
-//carousel:
+//slider:
 
 let clicksChevs = 0;
 let transformValue = 0;
@@ -170,36 +170,7 @@ IMAGES_BLOCK.addEventListener('click', (event) => {
     });
 });
 
-//Get a quote form submit:
-
-const formSubmit = () => {
-    let subject = document.getElementById('subject').value.toString();
-    let describe = document.getElementById('describe').value.toString();
-    console.log(describe);
-    let messageSubject = document.getElementById('message_subject');
-    let messageDescribe = document.getElementById('message_describe');
-    if (subject === 'Singolo' && describe === '') {
-        openPopup();
-        messageSubject.innerHTML = 'Тема: Singolo';
-        messageDescribe.innerHTML = 'Без описания';
-    }
-    else if (subject === '' && describe === '') {
-        openPopup();
-        messageSubject.innerHTML = 'Без темы';
-        messageDescribe.innerHTML = 'Без описания';
-    }
-    else if (describe === 'Portfolio project' && subject === '') {
-        openPopup();
-        messageSubject.innerHTML = 'Без темы';
-        messageDescribe.innerHTML = 'Описание: Portfolio project';
-    }
-    else if (describe === 'Portfolio project' && subject === 'Singolo') {
-        openPopup();
-        messageSubject.innerHTML = 'Тема: Singolo';
-        messageDescribe.innerHTML = 'Описание: Portfolio project';
-    }
-};
-
+// Get a quote form submit:
 
 const openPopup = () => {
     let blackout = document.getElementById('popup_blackout');
@@ -211,20 +182,40 @@ const openPopup = () => {
 const closePopup = () => {
     let popup = document.getElementById('popup');
     let blackout = document.getElementById('popup_blackout');
-    clearInputs();
+    FORM.reset();
     blackout.style.display = 'none';
     popup.style.display = 'none';
 };
 
-const clearInputs = () => {
-    let form = document.getElementById('form');
-    let inputs = form.querySelectorAll('input');
-    let textAreas = form.querySelectorAll('textarea');
-    inputs.forEach(elem => elem.value = '');
-    textAreas.forEach(elem => elem.value = '');
-};
-
-BUTTON_POPUP.addEventListener('click', formSubmit);
+FORM.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (FORM.checkValidity()) {
+        let subject = document.getElementById('subject').value.toString();
+        let describe = document.getElementById('describe').value.toString();
+        let messageSubject = document.getElementById('message_subject');
+        let messageDescribe = document.getElementById('message_describe');
+        if (subject === 'Singolo' && describe === '') {
+            openPopup();
+            messageSubject.innerHTML = 'Тема: Singolo';
+            messageDescribe.innerHTML = 'Без описания';
+        }
+        else if (subject === '' && describe === '') {
+            openPopup();
+            messageSubject.innerHTML = 'Без темы';
+            messageDescribe.innerHTML = 'Без описания';
+        }
+        else if (describe === 'Portfolio project' && subject === '') {
+            openPopup();
+            messageSubject.innerHTML = 'Без темы';
+            messageDescribe.innerHTML = 'Описание: Portfolio project';
+        }
+        else if (describe === 'Portfolio project' && subject === 'Singolo') {
+            openPopup();
+            messageSubject.innerHTML = 'Тема: Singolo';
+            messageDescribe.innerHTML = 'Описание: Portfolio project';
+        }
+    }
+});
 
 BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
 
