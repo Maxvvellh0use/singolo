@@ -6,13 +6,12 @@ const BACKGROUND_CAROUSEL = document.getElementById('phone-section-color');
 const HIDDEN_SLIDE_LEFT = document.getElementById('left_slide');
 const HIDDEN_SLIDE_RIGHT = document.getElementById('right_slide');
 const HIDDEN_SLIDE_CENTER = document.getElementById('center_slide');
-const PHONE_VERTICAL = document.getElementById('phone_vert');
-const PHONE_HORIZONTAL = document.getElementById('phone_hor');
+const PHONE_VERTICAL = document.getElementById('phone_vert_block');
+const PHONE_HORIZONTAL = document.getElementById('phone_hor_block');
 const OFF_PHONE_VERTICAL = document.getElementById('off_vertical');
 const OFF_PHONE_HORIZONTAL = document.getElementById('off_horizontal');
 const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
 const IMAGES_BLOCK = document.getElementById('images_block');
-const BUTTON_POPUP = document.getElementById('button_submit');
 const BUTTON_CLOSE_POPUP = document.getElementById('button_submit_close');
 const FORM = document.getElementById('form');
 
@@ -103,28 +102,42 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
 
 let clickPhonesVert = 0;
 
-PHONE_VERTICAL.addEventListener('click', () => {
-    if (clickPhonesVert === 0) {
-        OFF_PHONE_VERTICAL.style.opacity = '1';
-        clickPhonesVert++;
-    }
-    else {
-        OFF_PHONE_VERTICAL.style.opacity = '0';
-        clickPhonesVert = 0;
-    }
+
+PHONE_VERTICAL.addEventListener('click', (event) => {
+    let divPhonesVert = PHONE_VERTICAL.querySelectorAll('div, img');
+    let target = event.target;
+    divPhonesVert.forEach(elem => {
+        if (target === elem) {
+            if (clickPhonesVert === 0) {
+                OFF_PHONE_VERTICAL.style.opacity = '1';
+                clickPhonesVert++;
+            }
+            else {
+                OFF_PHONE_VERTICAL.style.opacity = '0';
+                clickPhonesVert = 0;
+            }
+        }
+    })
 });
 
 let clickPhonesHor = 0;
 
 PHONE_HORIZONTAL.addEventListener('click', (event) => {
-    if (clickPhonesHor === 0) {
-        OFF_PHONE_HORIZONTAL.style.opacity = '1';
-        clickPhonesHor++
-    }
-    else {
-        OFF_PHONE_HORIZONTAL.style.opacity = '0';
-        clickPhonesHor = 0;
-    }
+    let divPhonesHor= PHONE_HORIZONTAL.querySelectorAll('div, img');
+    console.log(divPhonesHor);
+    let target = event.target;
+    divPhonesHor.forEach(elem => {
+        if (target === elem) {
+            if (clickPhonesHor === 0) {
+                OFF_PHONE_HORIZONTAL.style.opacity = '1';
+                clickPhonesHor++
+            }
+            else {
+                OFF_PHONE_HORIZONTAL.style.opacity = '0';
+                clickPhonesHor = 0;
+            }
+        }
+    })
 });
 
 

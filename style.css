@@ -139,10 +139,10 @@ a {
 }
 
 .off_screen_vertical {
+    cursor: pointer;
     margin-top: 64px;
     margin-left: 12px;
     position: absolute;
-    z-index: 10;
     height: 334px;
     width: 192px;
     background: black;
@@ -151,10 +151,10 @@ a {
 }
 
 .off_screen_horizontal {
+    cursor: pointer;
     margin-top: 12px;
     margin-left: 60px;
     position: absolute;
-    z-index: 10;
     height: 192px;
     width: 334px;
     background: black;
