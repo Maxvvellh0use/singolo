@@ -1,3 +1,5 @@
+@import "media.css";
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,6 +25,7 @@ a {
 
 .wrapper-header,.wrapper-phone,.wrapper-services {
     max-width: 1020px;
+    width: 100vw;
     margin: 0 auto;
     overflow: hidden;
     transition: opacity .6s ease;
@@ -30,8 +33,9 @@ a {
 
 .header {
     position: fixed;
+    max-width: 1020px;
     z-index: 34;
-    width: 1020px;
+    width: 100vw;
     height: 89px;
     display: flex;
     flex-direction: row;
@@ -92,10 +96,10 @@ a {
 
 .phone-section {
     transition: background-color .6s ease;
-    width: 1020px;
+    width: 100%;
+    max-height: 683px;
     display: flex;
     flex-direction: column;
-    height: 683px;
     background: rgb(240,108,100);
     border-bottom: 6px solid rgb(234,103,107);
 }
@@ -103,7 +107,7 @@ a {
 .phone-section-top {
     overflow: hidden;
     right: 1010px;
-    width: 3000px;
+    max-width: 3000px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -139,24 +143,24 @@ a {
 }
 
 .off_screen_vertical {
-    cursor: pointer;
-    margin-top: 64px;
-    margin-left: 12px;
     position: absolute;
-    height: 334px;
-    width: 192px;
+    max-width: 200px;
+    max-height: 343px;
+    cursor: pointer;
+    margin-top: calc(7% + 3px);
+    margin-left: calc(1% + 3px);
     background: black;
     opacity: 0;
     transition: opacity .35s ease;
 }
 
 .off_screen_horizontal {
-    cursor: pointer;
-    margin-top: 12px;
-    margin-left: 60px;
     position: absolute;
-    height: 192px;
-    width: 334px;
+    cursor: pointer;
+    max-width: 390px;
+    max-height: 343px;
+    margin-top: calc(1% + 3px);
+    margin-left: calc(6% + 3px);
     background: black;
     opacity: 0;
     transition: opacity .35s ease;
@@ -177,16 +181,16 @@ a {
 
 .chev-left {
     position: absolute;
-    margin-top: 366px;
-    margin-left: 37px;
+    margin-top: 358px;
+    margin-left: 30px;
     cursor: pointer;
     z-index: 9;
 }
 
 .chev-right {
     position: absolute;
-    margin-top: 366px;
-    margin-left: 960px;
+    margin-top: 358px;
+    margin-left: 962px;
     cursor: pointer;
     z-index: 9;
 }
