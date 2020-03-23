@@ -106,8 +106,7 @@ a {
 
 .phone-section-top {
     overflow: hidden;
-    right: 1010px;
-    max-width: 3000px;
+    width: 3000px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -133,12 +132,13 @@ a {
     position: relative;
     opacity: 0;
 }
+.phone-section-slide2_right img, .phone-section-slide2_left img {
+    max-width: 502px;
+}
 
 .phone-section-slide1 {
-    margin-right: 31px;
     transition: opacity .6s ease;
     display: flex;
-    height: 1000px;
     position: relative;
 }
 
@@ -197,8 +197,8 @@ a {
 
 
 .phone-vertical img {
+    max-width: 224px;
     cursor: pointer;
-    border-radius: 27px;
     box-shadow:
             0 0 rgb(206,93,86),
             1px 1px rgb(206,93,86),
@@ -230,8 +230,8 @@ a {
 }
 
 .phone-horizontal img {
+    max-width: 448px;
     cursor: pointer;
-    border-radius: 27px;
     box-shadow:
             0 0 rgb(206,93,86),
             1px 1px rgb(206,93,86),

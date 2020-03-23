@@ -1,76 +1,158 @@
+/*@media (min-width: 1020px) {*/
+/*    .phone-section-top {*/
+/*        width: 3000px;*/
+/*    }*/
+/*    .off_screen_vertical {*/
+/*        height: 342px;*/
+/*        width: 192px;*/
+/*    }*/
+/*    .off_screen_horizontal {*/
+/*        height: 192px;*/
+/*        width: 348px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1020px) {*/
+/*    .phone-section-top {*/
+/*        width: 3000px;*/
+/*    }*/
+/*    .phone-section {*/
+/*        height: 71vw;*/
+/*    }*/
+/*    .off_screen_vertical {*/
+/*        height: 342px;*/
+/*        width: 192px;*/
+/*    }*/
+/*    .off_screen_horizontal {*/
+/*        height: 192px;*/
+/*        width: 343px;*/
+/*    }*/
+/*}*/
+
+
+/*@media (max-width: 768px) {*/
+/*    .phone-section-top {*/
+/*        width: 2650px;*/
+/*    }*/
+/*    .phone-section-slide1 {*/
+/*        margin-right: 91px;*/
+/*    }*/
+/*    .phone-vertical img {*/
+/*        width: 162.36px;*/
+/*        height: 344.26px;*/
+/*    }*/
+/*    .phone-horizontal {*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+/*    .phone-horizontal img {*/
+/*        width: 344.26px;*/
+/*        height: 162.36px;*/
+/*    }*/
+/*    .off_screen_vertical {*/
+/*        width: calc(21% + 5px);*/
+/*        height: calc(25% + 3px);*/
+/*    }*/
+/*    .off_screen_horizontal {*/
+/*        width: calc(38% + 5px);*/
+/*        height: calc(14% + 5px);*/
+/*    }*/
+
+/*    .phone-section-slide2_left img {*/
+/*        padding-right: 100px;*/
+/*        margin-top: 50px;*/
+/*        width: 350px;*/
+/*    }*/
+/*    .phone-section-slide2_right img {*/
+/*        margin-top: 100px;*/
+/*        width: 350px;*/
+/*    }*/
+/*    .chev-right {*/
+/*        bottom: 84.15%;*/
+/*        right: 34px;*/
+/*    }*/
+/*    .chev-left {*/
+/*        bottom: 84%;*/
+/*    }*/
+/*}*/
+
+
+
 @media (min-width: 1020px) {
     .phone-section-top {
-        width: 3000px;
-    }
-    .off_screen_vertical {
-        height: 342px;
-        width: 192px;
-    }
-    .off_screen_horizontal {
-        height: 192px;
-        width: 348px;
-    }
-}
-
-@media (max-width: 1020px) {
-    .phone-section-top {
-        width: 3000px;
+        right: 101vw;
     }
     .phone-section {
         height: 71vw;
     }
-    .off_screen_vertical {
-        height: 342px;
-        width: 192px;
+    .phone-section-slide1 {
+        height: 90vw;
+        width: 60vw;
     }
-    .off_screen_horizontal {
-        height: 192px;
-        width: 343px;
+    .phone-section-slide2_right img {
+        width: 48vw;
+    }
+    .phone-section-slide2_left img {
+        width: 48vw;
+    }
+    .phone-vertical img {
+        border-radius: 24px;
+        width: 22vw;
+    }
+    .phone-horizontal img {
+        border-radius: 24px;
+        width: 44vw;
+    }
+}
+@media (max-width: 1019px) {
+    .phone-section-top {
+        right: 101vw;
+    }
+    .phone-section {
+        height: 71vw;
+    }
+    .phone-section-slide1 {
+        height: 90vw;
+        width: 60vw;
+    }
+    .phone-section-slide2_right img {
+        width: 48vw;
+    }
+    .phone-section-slide2_left img {
+        width: 48vw;
+    }
+    .phone-vertical img {
+        border-radius: 2vw;
+        width: 22vw;
+    }
+    .phone-horizontal img {
+        border-radius: 2vw;
+        width: 44vw;
     }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .phone-section-top {
-        width: 2650px;
+        right: calc(170% + 3px);
+    }
+    .phone-section {
+        height: 71vw;
     }
     .phone-section-slide1 {
-        margin-right: 91px;
-    }
-    .phone-vertical img {
-        width: 162.36px;
-        height: 344.26px;
-    }
-    .phone-horizontal {
-        margin-bottom: 30px;
-    }
-    .phone-horizontal img {
-        width: 344.26px;
-        height: 162.36px;
-    }
-    .off_screen_vertical {
-        width: calc(21% + 5px);
-        height: calc(25% + 3px);
-    }
-    .off_screen_horizontal {
-        width: calc(38% + 5px);
-        height: calc(14% + 5px);
-    }
-
-    .phone-section-slide2_left img {
-        padding-right: 100px;
-        margin-top: 50px;
-        width: 350px;
+        height: 90vw;
+        width: 60vw;
     }
     .phone-section-slide2_right img {
-        margin-top: 100px;
-        width: 350px;
+        width: 48vw;
     }
-    .chev-right {
-        bottom: 84.15%;
-        right: 34px;
+    .phone-section-slide2_left img {
+        width: 48vw;
     }
-    .chev-left {
-        bottom: 84%;
+    .phone-vertical img {
+        border-radius: 2vw;
+        width: 22vw;
+    }
+    .phone-horizontal img {
+        border-radius: 2vw;
+        width: 44vw;
     }
 }
