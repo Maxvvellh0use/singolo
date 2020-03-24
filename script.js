@@ -79,22 +79,12 @@ CAROUSEL_LEFT.addEventListener('click', function carouselTranslate() {
         clicksChevs = 0;
     }
     else {
-        if (windowWidth > 1020) {
-            transformValue += 1000;
-            CAROUSEL.style.transform =`translateX(${transformValue}px)`;
-            BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
-            HIDDEN_SLIDE_LEFT.style.opacity = '1';
-            HIDDEN_SLIDE_CENTER.style.opacity = '0';
-            clicksChevs++;
-        }
-        else {
-            transformValue += windowWidth + 30;
-            CAROUSEL.style.transform =`translateX(${transformValue}px)`;
-            BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
-            HIDDEN_SLIDE_LEFT.style.opacity = '1';
-            HIDDEN_SLIDE_CENTER.style.opacity = '0';
-            clicksChevs++;
-        }
+        transformValue += windowWidth + 15;
+        CAROUSEL.style.transform =`translateX(${transformValue}px)`;
+        BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
+        HIDDEN_SLIDE_LEFT.style.opacity = '1';
+        HIDDEN_SLIDE_CENTER.style.opacity = '0';
+        clicksChevs++;
     }
 });
 
@@ -108,22 +98,12 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
         clicksChevs = 0;
     }
     else {
-        if (windowWidth > 1020) {
-            transformValue -= 1000;
-            CAROUSEL.style.transform =`translateX(${transformValue}px)`;
-            BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
-            HIDDEN_SLIDE_RIGHT.style.opacity = '1';
-            HIDDEN_SLIDE_CENTER.style.opacity = '0';
-            clicksChevs++;
-        }
-        else {
-            transformValue -= windowWidth + 30;
-            CAROUSEL.style.transform =`translateX(${transformValue}px)`;
-            BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
-            HIDDEN_SLIDE_RIGHT.style.opacity = '1';
-            HIDDEN_SLIDE_CENTER.style.opacity = '0';
-            clicksChevs++;
-        }
+        transformValue -= windowWidth + 40;
+        CAROUSEL.style.transform =`translateX(${transformValue}px)`;
+        BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
+        HIDDEN_SLIDE_RIGHT.style.opacity = '1';
+        HIDDEN_SLIDE_CENTER.style.opacity = '0';
+        clicksChevs++;
     }
 });
 
