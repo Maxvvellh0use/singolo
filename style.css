@@ -31,6 +31,7 @@ a {
     transition: opacity .6s ease;
 }
 
+
 .header {
     position: fixed;
     max-width: 1020px;
@@ -46,6 +47,26 @@ a {
     border-bottom: 6px solid rgb(50, 55,70);
 }
 
+
+.header__hamburger {
+    display: none;
+    margin: 18px;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger_line {
+    height: 3px;
+    width: 40px;
+    background: white;
+}
+.hamburger_line__center {
+    height: 2.5px;
+    width: 40px;
+    background: white;
+}
 
 .title {
     letter-spacing: 0.00006mm;
@@ -748,3 +769,16 @@ button {
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
 }
 
+@media (max-width: 374px) {
+    .chev-left {
+        margin-top: 25%;
+        margin-left: .5%;
+    }
+    .chev-right {
+        margin-top: 23%;
+        margin-left: 90%;
+    }
+    .header__hamburger {
+        display: flex;
+    }
+}
