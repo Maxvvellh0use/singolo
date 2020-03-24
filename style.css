@@ -25,9 +25,9 @@ a {
 
 .wrapper-header,.wrapper-phone,.wrapper-services {
     max-width: 1020px;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: opacity .6s ease;
 }
 
@@ -37,6 +37,7 @@ a {
     z-index: 34;
     width: 100vw;
     height: 89px;
+    margin-top: -89px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,10 +96,12 @@ a {
 /*section-phone styles*/
 
 .phone-section {
+    overflow: hidden;
     transition: background-color .6s ease;
     width: 100%;
-    max-height: 683px;
+    max-height: 600px;
     display: flex;
+    margin-top: 89px;
     flex-direction: column;
     background: rgb(240,108,100);
     border-bottom: 6px solid rgb(234,103,107);
@@ -106,7 +109,8 @@ a {
 
 .phone-section-top {
     overflow: hidden;
-    width: 3000px;
+    right: 69%;
+    max-width: 3000px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -120,17 +124,19 @@ a {
 }
 
 .phone-section-slide2_left {
+    margin-right: 12%;
     transition: opacity .6s ease;
-    top: 19%;
+    top: 9%;
     position: relative;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .phone-section-slide2_right {
+    margin-left: 10%;
     transition: opacity .6s ease;
-    top: 19%;
+    top: 9%;
     position: relative;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 .phone-section-slide2_right img, .phone-section-slide2_left img {
     max-width: 502px;
@@ -144,11 +150,13 @@ a {
 
 .off_screen_vertical {
     position: absolute;
-    max-width: 200px;
+    height: 32vw;
+    width: 18vw;
+    max-width: 194px;
     max-height: 343px;
     cursor: pointer;
-    margin-top: calc(7% + 3px);
-    margin-left: calc(1% + 3px);
+    margin-top: calc(6% + 3px);
+    margin-left: calc(1% + 1px);
     background: black;
     opacity: 0;
     transition: opacity .35s ease;
@@ -156,11 +164,13 @@ a {
 
 .off_screen_horizontal {
     position: absolute;
+    height: 17vw;
+    width: 30vw;
     cursor: pointer;
-    max-width: 390px;
-    max-height: 343px;
-    margin-top: calc(1% + 3px);
-    margin-left: calc(6% + 3px);
+    max-width: 324px;
+    max-height: 185px;
+    margin-top: calc(1% + 1px);
+    margin-left: calc(5% + 3px);
     background: black;
     opacity: 0;
     transition: opacity .35s ease;
@@ -170,96 +180,36 @@ a {
 /**/
 
 .phone-vertical {
-    margin-top: 143px;
-    margin-left: 49px;
+    margin-top: calc(7% + 3px);
+    margin-left: 2%;
 }
 
 .phone-horizontal {
-    margin-top: 264px;
-    margin-left: 98px;
+    margin-top: calc(21% + 3px);
+    margin-left: calc(7% + 15px);
 }
 
 .chev-left {
     position: absolute;
-    margin-top: 358px;
-    margin-left: 30px;
     cursor: pointer;
     z-index: 9;
 }
 
 .chev-right {
     position: absolute;
-    margin-top: 358px;
-    margin-left: 962px;
     cursor: pointer;
     z-index: 9;
 }
 
 
 .phone-vertical img {
-    max-width: 224px;
+    max-width: 243px;
     cursor: pointer;
-    box-shadow:
-            0 0 rgb(206,93,86),
-            1px 1px rgb(206,93,86),
-            2px 2px rgb(206,93,86),
-            3px 3px rgb(206,93,86),
-            4px 4px rgb(206,93,86),
-            5px 5px rgb(206,93,86),
-            6px 6px rgb(206,93,86),
-            7px 7px rgb(206,93,86),
-            8px 8px rgb(206,93,86),
-            8px 9px rgb(206,93,86),
-            9px 9px rgb(206,93,86),
-            10px 10px rgb(206,93,86),
-            11px 11px rgb(206,93,86),
-            12px 12px rgb(206,93,86),
-            13px 13px rgb(206,93,86),
-            14px 14px rgb(206,93,86),
-            15px 15px rgb(206,93,86),
-            16px 16px rgb(206,93,86),
-            17px 17px rgb(206,93,86),
-            18px 18px rgb(206,93,86),
-            19px 19px rgb(206,93,86),
-            20px 20px rgb(206,93,86),
-            21px 21px rgb(206,93,86),
-            22px 22px rgb(206,93,86),
-            23px 23px rgb(206,93,86),
-            24px 24px rgb(206,93,86),
-            25px 25px rgb(206,93,86);
 }
 
 .phone-horizontal img {
-    max-width: 448px;
+    max-width: 460px;
     cursor: pointer;
-    box-shadow:
-            0 0 rgb(206,93,86),
-            1px 1px rgb(206,93,86),
-            2px 2px rgb(206,93,86),
-            3px 3px rgb(206,93,86),
-            4px 4px rgb(206,93,86),
-            5px 5px rgb(206,93,86),
-            6px 6px rgb(206,93,86),
-            7px 7px rgb(206,93,86),
-            8px 8px rgb(206,93,86),
-            8px 9px rgb(206,93,86),
-            9px 9px rgb(206,93,86),
-            10px 10px rgb(206,93,86),
-            11px 11px rgb(206,93,86),
-            12px 12px rgb(206,93,86),
-            13px 13px rgb(206,93,86),
-            14px 14px rgb(206,93,86),
-            15px 15px rgb(206,93,86),
-            16px 16px rgb(206,93,86),
-            17px 17px rgb(206,93,86),
-            18px 18px rgb(206,93,86),
-            19px 19px rgb(206,93,86),
-            20px 20px rgb(206,93,86),
-            21px 21px rgb(206,93,86),
-            22px 22px rgb(206,93,86),
-            23px 23px rgb(206,93,86),
-            24px 24px rgb(206,93,86),
-            25px 25px rgb(206,93,86);
 }
 
 .chev-left img:hover, .chev-right img:hover {

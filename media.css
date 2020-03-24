@@ -1,92 +1,14 @@
-/*@media (min-width: 1020px) {*/
-/*    .phone-section-top {*/
-/*        width: 3000px;*/
-/*    }*/
-/*    .off_screen_vertical {*/
-/*        height: 342px;*/
-/*        width: 192px;*/
-/*    }*/
-/*    .off_screen_horizontal {*/
-/*        height: 192px;*/
-/*        width: 348px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 1020px) {*/
-/*    .phone-section-top {*/
-/*        width: 3000px;*/
-/*    }*/
-/*    .phone-section {*/
-/*        height: 71vw;*/
-/*    }*/
-/*    .off_screen_vertical {*/
-/*        height: 342px;*/
-/*        width: 192px;*/
-/*    }*/
-/*    .off_screen_horizontal {*/
-/*        height: 192px;*/
-/*        width: 343px;*/
-/*    }*/
-/*}*/
-
-
-/*@media (max-width: 768px) {*/
-/*    .phone-section-top {*/
-/*        width: 2650px;*/
-/*    }*/
-/*    .phone-section-slide1 {*/
-/*        margin-right: 91px;*/
-/*    }*/
-/*    .phone-vertical img {*/
-/*        width: 162.36px;*/
-/*        height: 344.26px;*/
-/*    }*/
-/*    .phone-horizontal {*/
-/*        margin-bottom: 30px;*/
-/*    }*/
-/*    .phone-horizontal img {*/
-/*        width: 344.26px;*/
-/*        height: 162.36px;*/
-/*    }*/
-/*    .off_screen_vertical {*/
-/*        width: calc(21% + 5px);*/
-/*        height: calc(25% + 3px);*/
-/*    }*/
-/*    .off_screen_horizontal {*/
-/*        width: calc(38% + 5px);*/
-/*        height: calc(14% + 5px);*/
-/*    }*/
-
-/*    .phone-section-slide2_left img {*/
-/*        padding-right: 100px;*/
-/*        margin-top: 50px;*/
-/*        width: 350px;*/
-/*    }*/
-/*    .phone-section-slide2_right img {*/
-/*        margin-top: 100px;*/
-/*        width: 350px;*/
-/*    }*/
-/*    .chev-right {*/
-/*        bottom: 84.15%;*/
-/*        right: 34px;*/
-/*    }*/
-/*    .chev-left {*/
-/*        bottom: 84%;*/
-/*    }*/
-/*}*/
-
-
-
 @media (min-width: 1020px) {
     .phone-section-top {
-        right: 101vw;
+        width: 245%;
+        height: 100%;
     }
     .phone-section {
-        height: 71vw;
+        height: 56vw;
     }
     .phone-section-slide1 {
-        height: 90vw;
-        width: 60vw;
+        height: 51vw;
+        width: 98vw;
     }
     .phone-section-slide2_right img {
         width: 48vw;
@@ -95,24 +17,41 @@
         width: 48vw;
     }
     .phone-vertical img {
-        border-radius: 24px;
-        width: 22vw;
+        width: 22.55vw;
     }
     .phone-horizontal img {
-        border-radius: 24px;
-        width: 44vw;
+        width: 42.6vw;
     }
+    .chev-left {
+        margin-top: 283px;
+        margin-left: 19px;
+    }
+
+    .chev-right {
+        margin-top: 282px;
+        margin-left: 972px;
+    }
+    .off_screen_vertical {
+        height: 32vw;
+        width: 18vw;
+    }
+    .off_screen_horizontal {
+        height: 17vw;
+        width: 30vw;
+    }
+
 }
 @media (max-width: 1019px) {
     .phone-section-top {
-        right: 101vw;
+        width: 245%;
+        height: 100%;
     }
     .phone-section {
-        height: 71vw;
+        height: 56vw;
     }
     .phone-section-slide1 {
-        height: 90vw;
-        width: 60vw;
+        height: 59vw;
+        width: 98vw;
     }
     .phone-section-slide2_right img {
         width: 48vw;
@@ -121,25 +60,33 @@
         width: 48vw;
     }
     .phone-vertical img {
-        border-radius: 2vw;
-        width: 22vw;
+        width: 22.55vw;
     }
     .phone-horizontal img {
-        border-radius: 2vw;
-        width: 44vw;
+        width: 42.6vw;
+    }
+    .chev-left {
+        margin-top: 27%;
+        margin-left: 2%;
+    }
+
+    .chev-right {
+        margin-top: 27%;
+        margin-left: 93%;
     }
 }
 
 @media (max-width: 767px) {
     .phone-section-top {
-        right: calc(170% + 3px);
+        width: 245%;
+        height: 100%;
     }
     .phone-section {
-        height: 71vw;
+        height: 56vw;
     }
     .phone-section-slide1 {
         height: 90vw;
-        width: 60vw;
+        width: 98vw;
     }
     .phone-section-slide2_right img {
         width: 48vw;
@@ -148,11 +95,24 @@
         width: 48vw;
     }
     .phone-vertical img {
-        border-radius: 2vw;
-        width: 22vw;
+        width: 22.55vw;
     }
     .phone-horizontal img {
-        border-radius: 2vw;
-        width: 44vw;
+        width: 42.6vw;
     }
 }
+
+@media (max-width: 374px) {
+    .chev-left {
+        margin-top: 25%;
+        margin-left: .5%;
+    }
+
+    .chev-right {
+        margin-top: 23%;
+        margin-left: 90%;
+    }
+}
+
+
+
