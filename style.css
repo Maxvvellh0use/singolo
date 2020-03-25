@@ -57,6 +57,7 @@ a {
     height: 20px;
     flex-direction: column;
     justify-content: space-between;
+    transition: all .6s ease;
 }
 
 .hamburger_line {
@@ -95,7 +96,7 @@ a {
     padding: 12px 0 13px 0;
 }
 
-.hamburger_menu__list__item a{
+.hamburger_menu__list__item a {
     font-size: 19px;
     font-weight: bold;
 }
@@ -106,6 +107,7 @@ a {
     align-self: center;
     font-size: 12px;
     font-weight: bold;
+    transition: all ease-out .5s;
 }
 
 .star-color {
@@ -278,7 +280,7 @@ a {
     width: 100%;
     color: rgb(102,109,137);
     background: rgb(242,242,242);
-    height: 494px;
+    height: 100%;
     border-bottom: 6px solid white;
 }
 
@@ -292,7 +294,7 @@ a {
 
 .services-title {
     font-size: 30px;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: .0002mm;
 }
 
@@ -311,8 +313,9 @@ a {
 
 .services-block {
     display: flex;
-    height: 375px;
+    max-height: 1200px;
     flex-direction: column;
+    padding-bottom: 35px;
 }
 
 .services-all-3-columns {
@@ -807,14 +810,46 @@ button {
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
 }
 
-@media (max-width: 474px) {
+@media (max-width: 767px) {
+    .phone-section-top {
+        width: 245%;
+        height: 100%;
+    }
+    .phone-section {
+        height: 56vw;
+    }
+    .phone-section-slide1 {
+        height: 90vw;
+        width: 98vw;
+    }
+    .phone-section-slide2_right img {
+        width: 48vw;
+    }
+    .phone-section-slide2_left img {
+        width: 48vw;
+    }
+    .phone-vertical img {
+        width: 22.55vw;
+    }
+    .phone-horizontal img {
+        width: 42.6vw;
+    }
+    .services-interior {
+        flex: 0 0 41%;
+    }
+    .services-block {
+        /*margin-top: ;*/
+    }
+}
+
+@media (max-width: 374px) {
     .chev-left {
         margin-top: 25%;
         margin-left: .5%;
     }
     .chev-right {
-        margin-top: 23%;
-        margin-left: 90%;
+        margin-top: 23.5%;
+        margin-left: 92%;
     }
     .header__hamburger {
         display: flex;
@@ -826,15 +861,12 @@ button {
         margin-right: 115px;
         font-size: 20px;
     }
-    .title {
-        margin-right: 115px;
-    }
     .hamburger_title_nav {
         margin-top: 20px;
         margin-left: 23px;
     }
     .hamburger_title {
-        padding-left: 144px;
+        padding-left: 35%;
     }
     .header {
         height: 65px;
@@ -843,13 +875,26 @@ button {
     .phone-section {
         margin-top: 71px;
     }
-
-
-
-
+    .services-block {
+        padding-bottom: 15px;
+    }
+    .services-header {
+        margin: 9px 0 0 28px;
+    }
+    .services-interior {
+        flex: 0 0 85%;
+    }
+    .services-title-text {
+        text-align: left;
+    }
+    .services-all-3-columns {
+        margin: 0px 0px 0px 14px;
+    }
 
 
     .peoples {
         flex-direction: column;
     }
 }
+
+

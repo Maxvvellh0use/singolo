@@ -17,6 +17,7 @@ const FORM = document.getElementById('form');
 const HAMBURGER = document.getElementById('hamburger');
 const HAMBURGER_NAV = document.getElementById('hamburger_menu');
 const HAMBURGER_LIST = document.getElementById('hamburger_list');
+const TITLE_SINGOLO = document.getElementById('title_singolo');
 
 //menu-navigation:
 
@@ -261,6 +262,7 @@ const openHamburgerMenu = async function() {
             HAMBURGER_LIST.style.transform = 'translateX(0vw)';
         }, 200);
         blackout.style.display = 'block';
+        HAMBURGER.style.transform = 'rotate(90deg)';
         clicksHamburger++;
         await promise;
     }
@@ -268,6 +270,7 @@ const openHamburgerMenu = async function() {
         setTimeout(() => HAMBURGER_NAV.style.display = 'none', 600);
         HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
         HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
+        HAMBURGER.style.transform = 'rotate(0deg)';
         blackout.style.display = 'none';
         clicksHamburger = 0;
     }
