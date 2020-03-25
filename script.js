@@ -14,6 +14,9 @@ const PORTFOLIO_FILTER = document.getElementById('filter_buttons');
 const IMAGES_BLOCK = document.getElementById('images_block');
 const BUTTON_CLOSE_POPUP = document.getElementById('button_submit_close');
 const FORM = document.getElementById('form');
+const HAMBURGER = document.getElementById('hamburger');
+const HAMBURGER_NAV = document.getElementById('hamburger_menu');
+const HAMBURGER_LIST = document.getElementById('hamburger_list');
 
 //menu-navigation:
 
@@ -242,6 +245,44 @@ FORM.addEventListener('submit', (event) => {
 });
 
 BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
+
+
+//hamburger:
+console.log(HAMBURGER);
+let clicksHamburger = 0;
+const openHamburgerMenu = async function() {
+    let blackout = document.getElementById('popup_blackout');
+    if (clicksHamburger === 0) {
+        let promise = new Promise(() => {
+            setTimeout(() => HAMBURGER_NAV.style.display = 'block', 100)
+        });
+        setTimeout(() => {
+            HAMBURGER_NAV.style.transform = 'translateX(0vw)';
+            HAMBURGER_LIST.style.transform = 'translateX(0vw)';
+        }, 200);
+        blackout.style.display = 'block';
+        clicksHamburger++;
+        await promise;
+    }
+    else {
+        setTimeout(() => HAMBURGER_NAV.style.display = 'none', 600);
+        HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
+        HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
+        blackout.style.display = 'none';
+        clicksHamburger = 0;
+    }
+};
+
+const closeHamburgerMenu = async function() {
+    HAMBURGER_NAV.style.display = 'none';
+    HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
+    HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
+    blackout.style.display = 'none';
+    clicksHamburger = 0;
+};
+
+HAMBURGER.addEventListener('click', openHamburgerMenu);
+
 
 
 
