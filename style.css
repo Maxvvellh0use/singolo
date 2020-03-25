@@ -298,7 +298,8 @@ a {
 
 .services-title-text {
     text-align: justify;
-    width: 960px;
+    max-width: 960px;
+    width: 85vw;
     margin-top: -5px;
     margin-left: 1px;
     font-size: 18px;
@@ -803,7 +804,7 @@ button {
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
 }
 
-@media (max-width: 474px) {
+@media (max-width: 374px) {
     .chev-left {
         margin-top: 25%;
         margin-left: .5%;
@@ -838,5 +839,14 @@ button {
     }
     .phone-section {
         margin-top: 71px;
+    }
+
+
+
+
+
+
+    .peoples {
+        flex-direction: column;
     }
 }
