@@ -526,17 +526,20 @@ button {
 
 .peoples__photo {
     margin-top: -1px;
-    width: 300px;
+    /*width: 300px;*/
+    width: 30vw;
 }
 
 .peoples__description {
-    width: 300px;
+    /*width: 300px;*/
+    width: 30vw;
     margin-top: -17px;
 }
 
 
 #person-list__center-block {
-    width: 302px;
+    /*width: 302px;*/
+    width: 30vw;
 }
 
 .peoples__title {
