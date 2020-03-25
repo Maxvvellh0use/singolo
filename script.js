@@ -273,14 +273,6 @@ const openHamburgerMenu = async function() {
     }
 };
 
-const closeHamburgerMenu = async function() {
-    HAMBURGER_NAV.style.display = 'none';
-    HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
-    HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
-    blackout.style.display = 'none';
-    clicksHamburger = 0;
-};
-
 HAMBURGER.addEventListener('click', openHamburgerMenu);
 
 

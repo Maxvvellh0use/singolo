@@ -275,7 +275,7 @@ a {
 /*section-services styles*/
 
 .services {
-    width: 1020px;
+    width: 100%;
     color: rgb(102,109,137);
     background: rgb(242,242,242);
     height: 494px;
@@ -284,7 +284,7 @@ a {
 
 .services-header {
     flex-direction: row;
-    width: 1020px;
+    width: 100%;
     margin-top: 36px;
     margin-left: 39px;
     margin-right: 37px;
@@ -488,7 +488,8 @@ button {
 
 .about__section {
     background: rgb(242,242,242);
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     height: 729px;
     margin: auto;
     color: rgb(102,109,137);
@@ -625,7 +626,8 @@ button {
     padding-left: 15px;
     border: none;
     border-radius: 5px;
-    width: 604px;
+    width: 100%;
+    max-width: 604px;
     height: 28px;
     background: rgb(214,86,79);
     transition: background-color .4s ease-out,
@@ -633,7 +635,8 @@ button {
 }
 
 .input--textarea {
-    width: 602px;
+    max-width: 602px;
+    width: 100%;
     padding-top: 10px;
     height: 187px;
     resize: none;
@@ -704,7 +707,6 @@ button {
 
 
 .contacts {
-    flex-basis: 1222px;
     padding-top: 5px;
     padding-left: 19px;
 }
@@ -801,7 +803,7 @@ button {
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
 }
 
-@media (max-width: 400px) {
+@media (max-width: 374px) {
     .chev-left {
         margin-top: 25%;
         margin-left: .5%;
