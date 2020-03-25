@@ -803,7 +803,7 @@ button {
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
 }
 
-@media (max-width: 374px) {
+@media (max-width: 474px) {
     .chev-left {
         margin-top: 25%;
         margin-left: .5%;
