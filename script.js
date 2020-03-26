@@ -222,9 +222,9 @@ FORM.addEventListener('submit', (event) => {
         let describe = document.getElementById('describe').value.toString();
         let messageSubject = document.getElementById('message_subject');
         let messageDescribe = document.getElementById('message_describe');
-        if (subject === 'Singolo' && describe === '') {
+        if (subject !== '' && describe === '') {
             openPopup();
-            messageSubject.innerHTML = 'Тема: Singolo';
+            messageSubject.innerHTML = 'Тема:' + subject;
             messageDescribe.innerHTML = 'Без описания';
         }
         else if (subject === '' && describe === '') {
@@ -232,15 +232,15 @@ FORM.addEventListener('submit', (event) => {
             messageSubject.innerHTML = 'Без темы';
             messageDescribe.innerHTML = 'Без описания';
         }
-        else if (describe === 'Portfolio project' && subject === '') {
+        else if (describe !== '' && subject === '') {
             openPopup();
             messageSubject.innerHTML = 'Без темы';
-            messageDescribe.innerHTML = 'Описание: Portfolio project';
+            messageDescribe.innerHTML = 'Описание:' + describe;
         }
-        else if (describe === 'Portfolio project' && subject === 'Singolo') {
+        else if (describe !== '' && subject !== '') {
             openPopup();
-            messageSubject.innerHTML = 'Тема: Singolo';
-            messageDescribe.innerHTML = 'Описание: Portfolio project';
+            messageSubject.innerHTML = 'Тема:' + subject;
+            messageDescribe.innerHTML = 'Описание:' + describe;
         }
     }
 });
