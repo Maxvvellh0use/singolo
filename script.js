@@ -251,9 +251,9 @@ BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
 //hamburger:
 console.log(HAMBURGER);
 let clicksHamburger = 0;
+let blackout = document.getElementById('popup_blackout');
+let hamburgerTitle = document.getElementById('hamburger_title');
 const openHamburgerMenu = async function() {
-    let blackout = document.getElementById('popup_blackout');
-    let hamburgerTitle = document.getElementById('hamburger_title');
     if (clicksHamburger === 0) {
         let promise = new Promise(() => {
             setTimeout(() => HAMBURGER_NAV.style.display = 'block', 100)
@@ -280,6 +280,30 @@ const openHamburgerMenu = async function() {
 };
 
 HAMBURGER.addEventListener('click', openHamburgerMenu);
+
+let clicksMenuItems = 0;
+
+//close hamburger menu navigation after click to menu item:
+
+HAMBURGER_LIST.addEventListener('click', (event) => {
+    let blackout = document.getElementById('popup_blackout');
+    let hamburgerTitle = document.getElementById('hamburger_title');
+    let target = event.target;
+    // alert('click!');
+    console.log(target);
+    HAMBURGER_LIST.querySelectorAll('a').forEach(elem => {
+
+        if (target === elem) {
+            HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
+            HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
+            HAMBURGER.style.transform = 'rotate(0deg)';
+            blackout.style.display = 'none';
+            hamburgerTitle.style.opacity = '1';
+        }
+    });
+});
+
+
 
 
 
