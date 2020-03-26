@@ -253,6 +253,7 @@ console.log(HAMBURGER);
 let clicksHamburger = 0;
 const openHamburgerMenu = async function() {
     let blackout = document.getElementById('popup_blackout');
+    let hamburgerTitle = document.getElementById('hamburger_title');
     if (clicksHamburger === 0) {
         let promise = new Promise(() => {
             setTimeout(() => HAMBURGER_NAV.style.display = 'block', 100)
@@ -263,6 +264,7 @@ const openHamburgerMenu = async function() {
         }, 200);
         blackout.style.display = 'block';
         HAMBURGER.style.transform = 'rotate(90deg)';
+        hamburgerTitle.style.opacity = '0';
         clicksHamburger++;
         await promise;
     }
@@ -271,6 +273,7 @@ const openHamburgerMenu = async function() {
         HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
         HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
         HAMBURGER.style.transform = 'rotate(0deg)';
+        hamburgerTitle.style.opacity = '1';
         blackout.style.display = 'none';
         clicksHamburger = 0;
     }
