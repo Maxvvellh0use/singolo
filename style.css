@@ -714,9 +714,9 @@ button {
     width: 22%;
     height: 21vw;
     z-index: 25;
-    margin-top: 8%;
-    margin-left: 32%;
+    margin-left: calc(33% - 59px);
     background: #666D89;
+    overflow: hidden;
 }
 
 .popup_blackout {
