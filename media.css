@@ -42,6 +42,10 @@
 
 }
 @media (max-width: 1019px) {
+    .services-interior {
+        flex: 1 0 43%;
+        margin-right: 42px;
+    }
     .phone-section-top {
         width: 245%;
         height: 100%;

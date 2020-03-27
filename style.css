@@ -893,6 +893,7 @@ button {
     }
     .services-interior {
         flex: 0 0 81%;
+        width: 90vw;
     }
     .services-title-text {
         text-align: left;
@@ -930,7 +931,7 @@ button {
 
 
     .content-block {
-        width: 101%;
+        width: 110%;
         max-width: 695px;
     }
     .content-block__image {
