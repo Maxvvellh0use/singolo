@@ -722,6 +722,7 @@ button {
     display: none;
     z-index: 15;
     width: 100vw;
+    max-width: 1020px;
     height: 100vh;
     background: #2D303A;
     opacity: .4;
