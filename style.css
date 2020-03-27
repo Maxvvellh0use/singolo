@@ -9,7 +9,11 @@ body {
     margin: auto;
     width: 100%;
     max-width: 1020px;
-    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+main {
+    overflow-x: -moz-hidden-unscrollable;
 }
 h1 {
     font-size: 24px;
@@ -30,13 +34,14 @@ a {
     max-width: 1020px;
     width: 100%;
     margin: 0 auto;
-    /*overflow: hidden;*/
+    /* overflow-x: overlay; */
     transition: opacity .6s ease;
 }
 
 
 .header {
     position: fixed;
+    visibility: visible;
     max-width: 1020px;
     z-index: 34;
     width: 100vw;
@@ -280,6 +285,7 @@ a {
 /*section-services styles*/
 
 .services {
+    overflow: hidden;
     width: 100%;
     color: rgb(102,109,137);
     background: rgb(242,242,242);
@@ -680,10 +686,14 @@ button {
 .form__submit {
     margin-top: -5px;
     width: calc(100% + 16px);
-    background: rgb(214,86,79);
     padding: 4px 5px 4px 6px;
-    font-size: 17px;
-    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    background: #FBC65F;
+    border-radius: 5px;
+    color: #886A30;
 }
 
 .form__submit:hover {
@@ -824,9 +834,13 @@ button {
 }
 
 @media (max-width: 767px) {
+    .header {
+        height: 65px;
+        margin-top: -71px;
+    }
     .header__hamburger {
         display: flex;
-        margin-top: 35px;
+        margin-top: 25px;
     }
     .header-menu {
         display: none;
@@ -916,8 +930,8 @@ button {
 
 
     .content-block {
-        width: 107%;
-        max-width: 603px;
+        width: 101%;
+        max-width: 695px;
     }
     .content-block__image {
         flex: 1 1 31%;
@@ -950,10 +964,6 @@ button {
 }
 
 @media (max-width: 374px) {
-    .header {
-        height: 65px;
-        margin-top: -71px;
-    }
     .hamburger_title_nav {
         margin-top: 20px;
         margin-left: 23px;
