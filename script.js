@@ -72,7 +72,6 @@ window.addEventListener('resize', () => {
     windowWidth = HIDDEN_SLIDE_CENTER.offsetWidth;
 });
 
-console.log(windowWidth);
 CAROUSEL_LEFT.addEventListener('click', function carouselTranslate() {
     if (clicksChevs >= 1) {
         transformValue = 0;
@@ -249,7 +248,6 @@ BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
 
 
 //hamburger:
-console.log(HAMBURGER);
 let clicksHamburger = 0;
 let blackout = document.getElementById('popup_blackout');
 let hamburgerTitle = document.getElementById('hamburger_title');
@@ -303,9 +301,17 @@ HAMBURGER_LIST.addEventListener('click', (event) => {
     });
 });
 
+//close hamburger menu navigation after resize window:
 
-
-
-
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 767 && HAMBURGER_NAV.style.display === 'block') {
+//         HAMBURGER_NAV.style.display = 'none';
+//         HAMBURGER.style.display = 'none';
+//         blackout.style.display = 'none';
+//     }
+//     else if (window.innerWidth < 767) {
+//         HAMBURGER.style.display = 'block';
+//     }
+// });
 
 

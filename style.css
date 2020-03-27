@@ -679,14 +679,15 @@ button {
 }
 
 .quote__main-content {
+    margin-bottom: 35px;
     display: flex;
     flex-direction: row;
 }
 
 .form__submit {
     margin-top: -5px;
-    width: calc(100% + 16px);
-    padding: 4px 5px 4px 6px;
+    width: 138px;
+    padding: 10px 5px 10px 6px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -738,7 +739,7 @@ button {
 .contacts {
     clear: both;
     padding-top: 5px;
-    padding-left: 19px;
+    padding-left: 35px;
 }
 
 .contacts__name {
@@ -850,7 +851,7 @@ button {
     }
     .hamburger_title_nav {
         margin-right: 115px;
-        margin-top: 32px;
+        margin-top: 23px;
         margin-left: 23px;
     }
     .hamburger_title {
@@ -962,6 +963,9 @@ button {
         margin-right: 0;
         padding: 0;
     }
+    .form__submit {
+        width: calc(100% + 16px);
+    }
 }
 
 @media (max-width: 374px) {
@@ -1001,7 +1005,6 @@ button {
     .peoples__person-list {
         width: 100%;
     }
-
 }
 
 
