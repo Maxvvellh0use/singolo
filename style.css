@@ -421,6 +421,7 @@ button {
 .header__wrapper,.content__wrapper {
     background: rgb(45,48,58);
     color: rgb(102,109,138);
+    scroll-margin-top: -9vw;
 }
 
 .content__wrapper {
@@ -519,6 +520,7 @@ button {
 
 .section-header {
     padding-top: 38px;
+    scroll-margin-top: -5vw;
 }
 
 .section-header__name {
@@ -541,7 +543,7 @@ button {
 }
 
 .peoples__person-list {
-    padding: 0 3% 8% 0;
+    padding: 0px 3% 8% 0;
 }
 
 .peoples__photo {
@@ -560,7 +562,7 @@ button {
 
 
 #person-list__center-block {
-    width: 102%;
+    width: 100%;
 }
 
 .peoples__title {
@@ -816,6 +818,10 @@ button {
     font-size: 11px;
 }
 
+.section__links {
+    scroll-margin-top: -4vw;
+}
+
 .social-links__social-links {
     display: flex;
     flex-direction: row;
@@ -833,6 +839,134 @@ button {
     transition: all ease-out .5s;
     -webkit-filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
     filter: drop-shadow(0 0 8px rgba(240,108,100,.5));
+}
+
+/*media*/
+
+@media (min-width: 1020px) {
+    .content-block__image {
+        flex: 1 1 22%;
+    }
+    .phone-section-top {
+        width: 245%;
+        height: 100%;
+    }
+    .phone-section {
+        height: 56vw;
+    }
+    .phone-section-slide1 {
+        height: 51vw;
+        width: 98vw;
+    }
+    .phone-section-slide2_right img {
+        width: 48vw;
+    }
+    .phone-section-slide2_left img {
+        width: 48vw;
+    }
+    .phone-vertical img {
+        width: 22.55vw;
+    }
+    .phone-horizontal img {
+        width: 42.6vw;
+    }
+    .chev-left {
+        margin-top: 283px;
+        margin-left: 19px;
+    }
+
+    .chev-right {
+        margin-top: 282px;
+        margin-left: 972px;
+    }
+    .off_screen_vertical {
+        height: 32vw;
+        width: 18vw;
+    }
+    .off_screen_horizontal {
+        height: 17vw;
+        width: 30vw;
+    }
+
+}
+@media (max-width: 1019px) {
+
+    .phone-section-slide2_right img {
+        width: 48vw;
+    }
+    .phone-section-slide2_left img {
+        width: 48vw;
+    }
+    .phone-vertical img {
+        width: 22.55vw;
+    }
+    .phone-horizontal img {
+        width: 42.6vw;
+    }
+    .chev-left {
+        margin-top: 27%;
+        margin-left: 2%;
+    }
+
+    .chev-right {
+        margin-top: 26%;
+        margin-left: 93%;
+    }
+    .phone-section-top {
+        width: 245%;
+        height: 100%;
+    }
+    .phone-section {
+        height: 56vw;
+    }
+    .phone-section-slide1 {
+        height: 59vw;
+        width: 98vw;
+    }
+    .services-block {
+        padding-bottom: 15px;
+    }
+    .services-header {
+        margin: 9px 0 0 28px;
+    }
+    .services-interior {
+        flex: 0 0 46%;
+        width: 90vw;
+    }
+    .services-title-text {
+        text-align: left;
+    }
+    .services-all-3-columns {
+        margin: 0 0 0 14px;
+    }
+    .portfolio-header {
+        padding-top: 37px;
+    }
+    .content__wrapper {
+        padding-left: 25px;
+    }
+    .header__wrapper {
+        padding: 0 25px 0 25px;
+    }
+    .section-header {
+        padding-top: 7px;
+    }
+    .about__wrapper {
+        padding: 0 29px;
+    }
+    .peoples__wrapper {
+        padding: 0 30px;
+    }
+    .peoples__person-list {
+        padding: 0px 3% 2% 0;
+    }
+    .quote__title {
+        padding-top: 4px;
+    }
+    .quote__wrapper {
+        padding: 0px 29px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -886,47 +1020,6 @@ button {
         margin-top: 71px;
     }
 
-
-    .services-block {
-        padding-bottom: 15px;
-    }
-    .services-header {
-        margin: 9px 0 0 28px;
-    }
-    .services-interior {
-        flex: 0 0 81%;
-        width: 90vw;
-    }
-    .services-title-text {
-        text-align: left;
-    }
-    .services-all-3-columns {
-        margin: 0 0 0 14px;
-    }
-    .portfolio-header {
-        padding-top: 37px;
-    }
-    .content__wrapper {
-        padding-left: 25px;
-    }
-    .header__wrapper {
-        padding: 0 25px 0 25px;
-    }
-    .section-header {
-        padding-top: 7px;
-    }
-    .about__wrapper {
-        padding: 0 29px;
-    }
-    .peoples__wrapper {
-        padding: 0 29px;
-    }
-    .quote__title {
-        padding-top: 4px;
-    }
-    .quote__wrapper {
-        padding: 0px 29px;
-    }
 
 
 
@@ -1015,3 +1108,6 @@ button {
 }
 
 
+@-moz-document url-prefix() {
+
+}
