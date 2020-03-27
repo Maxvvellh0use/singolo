@@ -1,4 +1,7 @@
 @media (min-width: 1020px) {
+    .content-block__image {
+        flex: 1 1 23%;
+    }
     .phone-section-top {
         width: 245%;
         height: 100%;
