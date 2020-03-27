@@ -248,6 +248,17 @@ BUTTON_CLOSE_POPUP.addEventListener('click', closePopup);
 
 
 //hamburger:
+
+const closeHamburgerMenu = () => {
+    setTimeout(() => HAMBURGER_NAV.style.display = 'none', 600);
+    HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
+    HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
+    HAMBURGER.style.transform = 'rotate(0deg)';
+    hamburgerTitle.style.opacity = '1';
+    blackout.style.display = 'none';
+    clicksHamburger = 0;
+};
+
 let clicksHamburger = 0;
 let blackout = document.getElementById('popup_blackout');
 let hamburgerTitle = document.getElementById('hamburger_title');
@@ -267,13 +278,7 @@ const openHamburgerMenu = async function() {
         await promise;
     }
     else {
-        setTimeout(() => HAMBURGER_NAV.style.display = 'none', 600);
-        HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
-        HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
-        HAMBURGER.style.transform = 'rotate(0deg)';
-        hamburgerTitle.style.opacity = '1';
-        blackout.style.display = 'none';
-        clicksHamburger = 0;
+        closeHamburgerMenu()
     }
 };
 
@@ -292,6 +297,9 @@ HAMBURGER_LIST.addEventListener('click', (event) => {
     HAMBURGER_LIST.querySelectorAll('a').forEach(elem => {
 
         if (target === elem) {
+            setTimeout(() => {
+                HAMBURGER_NAV.style.display = 'none';
+            }, 200);
             HAMBURGER_NAV.style.transform = 'translateX(-75vw)';
             HAMBURGER_LIST.style.transform = 'translateX(-75vw)';
             HAMBURGER.style.transform = 'rotate(0deg)';
@@ -313,5 +321,11 @@ HAMBURGER_LIST.addEventListener('click', (event) => {
 //         HAMBURGER.style.display = 'block';
 //     }
 // });
+
+//close hamburger menu navigation onblur:
+
+blackout.addEventListener('click', () => {
+    closeHamburgerMenu()
+});
 
 

@@ -893,7 +893,12 @@ button {
 
 }
 @media (max-width: 1019px) {
-
+    .header__hamburger {
+        display: none;
+    }
+    .header__hamburger_menu {
+        display: none;
+    }
     .phone-section-slide2_right img {
         width: 48vw;
     }
@@ -1110,7 +1115,11 @@ button {
     }
 }
 
+/*special for mozilla*/
 
 @-moz-document url-prefix() {
-
+    .header {
+        margin-top: 0;
+    }
 }
+
