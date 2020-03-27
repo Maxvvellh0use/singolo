@@ -83,7 +83,7 @@ CAROUSEL_LEFT.addEventListener('click', function carouselTranslate() {
     }
     else {
         transformValue += windowWidth + 15;
-        CAROUSEL.style.transform =`translateX(${transformValue}px)`;
+        CAROUSEL.style.transform =`translateX(40%)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
         HIDDEN_SLIDE_LEFT.style.opacity = '1';
         HIDDEN_SLIDE_CENTER.style.opacity = '0';
@@ -102,7 +102,7 @@ CAROUSEL_RIGHT.addEventListener('click', function carouselTranslate() {
     }
     else {
         transformValue -= windowWidth + 40;
-        CAROUSEL.style.transform =`translateX(${transformValue}px)`;
+        CAROUSEL.style.transform =`translateX(-42%)`;
         BACKGROUND_CAROUSEL.style.backgroundColor = `#648BF0`;
         HIDDEN_SLIDE_RIGHT.style.opacity = '1';
         HIDDEN_SLIDE_CENTER.style.opacity = '0';
