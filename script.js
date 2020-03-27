@@ -17,7 +17,7 @@ const FORM = document.getElementById('form');
 const HAMBURGER = document.getElementById('hamburger');
 const HAMBURGER_NAV = document.getElementById('hamburger_menu');
 const HAMBURGER_LIST = document.getElementById('hamburger_list');
-const TITLE_SINGOLO = document.getElementById('title_singolo');
+// const TITLE_SINGOLO = document.getElementById('title_singolo');
 
 //menu-navigation:
 
