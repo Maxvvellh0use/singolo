@@ -709,11 +709,11 @@ button {
     position: absolute;
     display: none;
     border-radius: 4px;
-    width: 200px;
-    height: 150px;
+    width: 22%;
+    height: 21vw;
     z-index: 25;
-    margin-top: 100px;
-    margin-left: 370px;
+    margin-top: 8%;
+    margin-left: 32%;
     background: #666D89;
 }
 
@@ -966,6 +966,12 @@ button {
     .form__submit {
         width: calc(100% + 16px);
     }
+    .popup {
+        width: 151px;
+        height: 168px;
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 374px) {
