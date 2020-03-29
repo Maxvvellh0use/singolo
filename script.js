@@ -17,24 +17,6 @@ const FORM = document.getElementById('form');
 const HAMBURGER = document.getElementById('hamburger');
 const HAMBURGER_NAV = document.getElementById('hamburger_menu');
 const HAMBURGER_LIST = document.getElementById('hamburger_list');
-// const TITLE_SINGOLO = document.getElementById('title_singolo');
-
-//menu-navigation:
-
-
-// MENU.addEventListener('click', (event) => {
-//     let itemsMenu = MENU.querySelectorAll('a');
-//     let target = event.target;
-//     itemsMenu.forEach(function(elem) {
-//         elem.classList.remove('menu_active')
-//     });
-//     itemsMenu.forEach(function(elem) {
-//         if (elem === target) {
-//             elem.classList.add('menu_active');
-//         }
-//     });
-// });
-
 
 const onScroll = () => {
     const cursorPos = window.scrollY;
@@ -138,7 +120,6 @@ let clickPhonesHor = 0;
 
 PHONE_HORIZONTAL.addEventListener('click', (event) => {
     let divPhonesHor= PHONE_HORIZONTAL.querySelectorAll('div, img');
-    console.log(divPhonesHor);
     let target = event.target;
     divPhonesHor.forEach(elem => {
         if (target === elem) {
@@ -292,8 +273,6 @@ HAMBURGER_LIST.addEventListener('click', (event) => {
     let blackout = document.getElementById('popup_blackout');
     let hamburgerTitle = document.getElementById('hamburger_title');
     let target = event.target;
-    // alert('click!');
-    console.log(target);
     HAMBURGER_LIST.querySelectorAll('a').forEach(elem => {
 
         if (target === elem) {
@@ -309,20 +288,6 @@ HAMBURGER_LIST.addEventListener('click', (event) => {
     });
 });
 
-//close hamburger menu navigation after resize window:
-
-// window.addEventListener('resize', () => {
-//     if (window.innerWidth > 767 && HAMBURGER_NAV.style.display === 'block') {
-//         HAMBURGER_NAV.style.display = 'none';
-//         HAMBURGER.style.display = 'none';
-//         blackout.style.display = 'none';
-//     }
-//     else if (window.innerWidth < 767) {
-//         HAMBURGER.style.display = 'block';
-//     }
-// });
-
-//close hamburger menu navigation onblur:
 
 blackout.addEventListener('click', () => {
     closeHamburgerMenu()
