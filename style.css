@@ -473,7 +473,6 @@ button {
 /*content style*/
 
 .content-block {
-    /* max-height: 1102px; */
     max-width: 1020px;
     height: 100%;
     width: 102%;
@@ -545,8 +544,8 @@ button {
 }
 
 .peoples__photo {
-    margin-top: -1px;
-    width: 102%;
+    margin-top: 0px;
+    width: 100%;
 }
 
 .peoples__photo img {
@@ -555,7 +554,7 @@ button {
 
 .peoples__description {
     width: 100%;
-    margin-top: -17px;
+    margin-top: -18px;
 }
 
 
@@ -574,7 +573,7 @@ button {
 
 .peoples__text {
     margin-top: -23px;
-    letter-spacing: .06mm;
+    letter-spacing: .04mm;
     font-size: 11px;
     line-height: 21px;
     word-spacing: .2mm;
@@ -885,6 +884,10 @@ button {
         height: 17vw;
         width: 30vw;
     }
+    .peoples__photo {
+        max-width: 280px;
+    }
+  
     .popup {
         margin-left: calc(23% - 59px);
     }
@@ -964,7 +967,7 @@ button {
         padding: 0 30px;
     }
     .peoples__person-list {
-        padding: 0px 3% 2% 0;
+        padding: 0px 2% 2% 0;
     }
     .quote__title {
         padding-top: 4px;
