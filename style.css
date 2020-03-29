@@ -346,12 +346,13 @@ a {
 }
 
 .services-text-block {
+    width: 72%;
     height: 100%;
     text-align: justify;
     padding-left: 21px;
     margin-top: 4px;
     letter-spacing: 0.005mm;
-    word-spacing: 0.005mm ;
+    word-spacing: 0.005mm;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -962,6 +963,9 @@ button {
     }
     .about__wrapper {
         padding: 0 29px;
+    }
+    .center_photo_desmond {
+        width: 101% !important;
     }
     .peoples__wrapper {
         padding: 0 30px;
